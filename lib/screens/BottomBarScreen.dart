@@ -1,88 +1,57 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
 import 'package:ibadahku_mobile/screens/HomeScreen.dart';
-import 'package:water_drop_nav_bar/water_drop_nav_bar.dart';
+import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
-class BottomBarScreen extends StatefulWidget {
+class BottomBarScreen extends StatelessWidget {
   const BottomBarScreen({super.key});
 
-  @override
-  State<BottomBarScreen> createState() => _BottomBarScreenState();
-}
-
-class _BottomBarScreenState extends State<BottomBarScreen> {
-  int selectedIndex = 0;
-  late PageController pageController;
-  @override
-  void initState() {
-    super.initState();
-    pageController = PageController(initialPage: selectedIndex);
-  }
+  List<PersistentTabConfig> _tabs() => [
+        PersistentTabConfig(
+          screen: const HomeScreen(),
+          item: ItemConfig(
+            icon: const FaIcon(FontAwesomeIcons.house),
+            title: "Home",
+            activeForegroundColor: primaryColor,
+          ),
+        ),
+        PersistentTabConfig(
+          screen: const HomeScreen(),
+          item: ItemConfig(
+            icon: const FaIcon(FontAwesomeIcons.clock),
+            title: "Sholat",
+            activeForegroundColor: primaryColor,
+          ),
+        ),
+        PersistentTabConfig(
+          screen: const HomeScreen(),
+          item: ItemConfig(
+            icon: const FaIcon(FontAwesomeIcons.compass),
+            title: "Kiblat",
+            activeForegroundColor: primaryColor,
+          ),
+        ),
+        PersistentTabConfig(
+          screen: const HomeScreen(),
+          item: ItemConfig(
+            icon: const FaIcon(FontAwesomeIcons.heartPulse),
+            title: "Kesehatan",
+            activeForegroundColor: primaryColor,
+          ),
+        ),
+      ];
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: PageView(
-        physics: const NeverScrollableScrollPhysics(),
-        controller: pageController,
-        children: <Widget>[
-          HomeScreen(),
-          Container(
-            alignment: Alignment.center,
-            child: Icon(
-              Icons.favorite_rounded,
-              size: 56,
-              color: Colors.red[400],
-            ),
-          ),
-          Container(
-            alignment: Alignment.center,
-            child: Icon(
-              Icons.email_rounded,
-              size: 56,
-              color: Colors.green[400],
-            ),
-          ),
-          Container(
-            alignment: Alignment.center,
-            child: Icon(
-              Icons.folder_rounded,
-              size: 56,
-              color: Colors.blue[400],
-            ),
-          ),
-        ],
+    return PersistentTabView(
+      backgroundColor: Colors.white,
+      tabs: _tabs(),
+      navBarBuilder: (navBarConfig) => Style4BottomNavBar(
+        navBarConfig: navBarConfig,
+        navBarDecoration: NavBarDecoration(color: Colors.transparent),
       ),
-      bottomNavigationBar: WaterDropNavBar(
-        backgroundColor: Colors.white,
-        waterDropColor: primaryColor,
-        onItemSelected: (int index) {
-          setState(() {
-            selectedIndex = index;
-          });
-          pageController.animateToPage(selectedIndex,
-              duration: const Duration(milliseconds: 400),
-              curve: Curves.easeOutQuad);
-        },
-        selectedIndex: selectedIndex,
-        barItems: <BarItem>[
-          BarItem(
-            filledIcon: Icons.bookmark_rounded,
-            outlinedIcon: Icons.bookmark_border_rounded,
-          ),
-          BarItem(
-              filledIcon: Icons.favorite_rounded,
-              outlinedIcon: Icons.favorite_border_rounded),
-          BarItem(
-            filledIcon: Icons.email_rounded,
-            outlinedIcon: Icons.email_outlined,
-          ),
-          BarItem(
-            filledIcon: Icons.folder_rounded,
-            outlinedIcon: Icons.folder_outlined,
-          ),
-        ],
-      ),
+      navBarOverlap: NavBarOverlap.full(),
     );
   }
 }
