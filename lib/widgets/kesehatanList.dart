@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:ibadahku_mobile/screens/kesehatan/list1.dart';
+import 'package:ibadahku_mobile/screens/kesehatan/list2.dart';
+import 'package:ibadahku_mobile/screens/kesehatan/list3.dart';
+import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
 class KesehatanList extends StatelessWidget {
   const KesehatanList({super.key});
@@ -21,7 +25,12 @@ class KesehatanList extends StatelessWidget {
               ),
               trailing: Icon(Icons.arrow_forward),
               onTap: () {
-                print('tapped');
+                pushWithoutNavBar(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => List1(),
+                  ),
+                );
               },
             ),
             ListTile(
@@ -34,7 +43,12 @@ class KesehatanList extends StatelessWidget {
               ),
               trailing: Icon(Icons.arrow_forward),
               onTap: () {
-                print('tapped');
+                pushWithoutNavBar(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => List2(),
+                  ),
+                );
               },
             ),
             ListTile(
@@ -47,7 +61,12 @@ class KesehatanList extends StatelessWidget {
               ),
               trailing: Icon(Icons.arrow_forward),
               onTap: () {
-                print('tapped');
+                pushWithoutNavBar(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => List3(),
+                  ),
+                );
               },
             ),
             ListTile(

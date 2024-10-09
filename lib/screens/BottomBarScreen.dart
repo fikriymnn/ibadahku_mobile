@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
 import 'package:ibadahku_mobile/screens/HomeScreen.dart';
-import 'package:ibadahku_mobile/screens/KesehatanScreen.dart';
+import 'package:ibadahku_mobile/screens/kesehatan/KesehatanScreen.dart';
 import 'package:ibadahku_mobile/screens/KiblatScreen.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 

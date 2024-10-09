@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:ibadahku_mobile/screens/KesehatanSelengkapnyaScreen.dart';
+import 'package:ibadahku_mobile/screens/kesehatan/KesehatanSelengkapnyaScreen.dart';
 import 'package:ibadahku_mobile/widgets/kesehatanList.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
-import '../constants/colors.dart';
-import '../widgets/textWidgets.dart';
+import '../../constants/colors.dart';
+import '../../widgets/textWidgets.dart';
 
 class KesehatanScreen extends StatefulWidget {
   const KesehatanScreen({super.key});
