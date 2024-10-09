@@ -19,6 +19,7 @@ class TextWidget extends StatelessWidget {
     return Text(
       text,
       maxLines: maxLines,
+      textAlign: TextAlign.center,
       style: TextStyle(
           overflow: TextOverflow.ellipsis,
           color: color,
