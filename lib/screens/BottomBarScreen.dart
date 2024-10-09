@@ -13,7 +13,10 @@ class BottomBarScreen extends StatelessWidget {
         PersistentTabConfig(
           screen: const HomeScreen(),
           item: ItemConfig(
-            icon: const FaIcon(FontAwesomeIcons.house),
+            icon: Padding(
+              padding: const EdgeInsets.only(top: 2),
+              child: const FaIcon(FontAwesomeIcons.house),
+            ),
             title: "Home",
             activeForegroundColor: primaryColor,
           ),
@@ -21,7 +24,12 @@ class BottomBarScreen extends StatelessWidget {
         PersistentTabConfig(
           screen: const HomeScreen(),
           item: ItemConfig(
-            icon: const FaIcon(FontAwesomeIcons.solidClock),
+            icon: Padding(
+              padding: const EdgeInsets.only(top: 2),
+              child: const FaIcon(
+                FontAwesomeIcons.solidClock,
+              ),
+            ),
             title: "Sholat",
             activeForegroundColor: primaryColor,
           ),
@@ -29,7 +37,10 @@ class BottomBarScreen extends StatelessWidget {
         PersistentTabConfig(
           screen: const KiblatScreen(),
           item: ItemConfig(
-            icon: const FaIcon(FontAwesomeIcons.solidCompass),
+            icon: Padding(
+              padding: const EdgeInsets.only(top: 2),
+              child: const FaIcon(FontAwesomeIcons.solidCompass),
+            ),
             title: "Kiblat",
             activeForegroundColor: primaryColor,
           ),
@@ -37,7 +48,10 @@ class BottomBarScreen extends StatelessWidget {
         PersistentTabConfig(
           screen: const KesehatanScreen(),
           item: ItemConfig(
-            icon: const FaIcon(FontAwesomeIcons.heartPulse),
+            icon: Padding(
+              padding: const EdgeInsets.only(top: 2),
+              child: const FaIcon(FontAwesomeIcons.heartPulse),
+            ),
             title: "Kesehatan",
             activeForegroundColor: primaryColor,
           ),
