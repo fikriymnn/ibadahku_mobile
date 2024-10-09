@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ibadahku_mobile/screens/HomeScreen.dart';
+import 'package:ibadahku_mobile/screens/BottomBarScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const BottomBarScreen(),
     );
   }
 }
