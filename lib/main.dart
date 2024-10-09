@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ibadahku_mobile/constants/colors.dart';
 import 'package:ibadahku_mobile/screens/BottomBarScreen.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Ibadahku Mobile',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: primaryColor),
         useMaterial3: true,
       ),
       home: const BottomBarScreen(),
