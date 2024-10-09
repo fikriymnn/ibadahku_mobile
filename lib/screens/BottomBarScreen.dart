@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
+import 'package:ibadahku_mobile/screens/HomeScreen.dart';
 import 'package:water_drop_nav_bar/water_drop_nav_bar.dart';
 
 class BottomBarScreen extends StatefulWidget {
@@ -25,14 +26,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         physics: const NeverScrollableScrollPhysics(),
         controller: pageController,
         children: <Widget>[
-          Container(
-            alignment: Alignment.center,
-            child: Icon(
-              Icons.bookmark_rounded,
-              size: 56,
-              color: Colors.amber[400],
-            ),
-          ),
+          HomeScreen(),
           Container(
             alignment: Alignment.center,
             child: Icon(
