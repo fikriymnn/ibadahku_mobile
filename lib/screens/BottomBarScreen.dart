@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ibadahku_mobile/constants/colors.dart';
 import 'package:water_drop_nav_bar/water_drop_nav_bar.dart';
 
 class BottomBarScreen extends StatefulWidget {
@@ -9,7 +10,6 @@ class BottomBarScreen extends StatefulWidget {
 }
 
 class _BottomBarScreenState extends State<BottomBarScreen> {
-  final Color navigationBarColor = Colors.white;
   int selectedIndex = 0;
   late PageController pageController;
   @override
@@ -60,7 +60,8 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
         ],
       ),
       bottomNavigationBar: WaterDropNavBar(
-        backgroundColor: navigationBarColor,
+        backgroundColor: Colors.white,
+        waterDropColor: primaryColor,
         onItemSelected: (int index) {
           setState(() {
             selectedIndex = index;
