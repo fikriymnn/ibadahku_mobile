@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
+import 'package:ibadahku_mobile/screens/home/persiapanHaji/PersiapanHajiScreen.dart';
 import 'package:ibadahku_mobile/services/sholatServices.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 import 'package:intl/intl.dart';
+import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -27,38 +29,102 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    const List menu = [
+    List menu = [
       {
         "icon": FontAwesomeIcons.suitcase,
         "title": "Persiapan Haji",
+        "click": () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PersiapanHajiScreen(),
+            ),
+          );
+        }
       },
       {
         "icon": FontAwesomeIcons.kaaba,
         "title": "Fiqih Umroh",
+        "click": () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PersiapanHajiScreen(),
+            ),
+          );
+        }
       },
       {
         "icon": FontAwesomeIcons.campground,
         "title": "Fiqih Haji",
+        "click": () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PersiapanHajiScreen(),
+            ),
+          );
+        }
       },
       {
         "icon": FontAwesomeIcons.personPraying,
         "title": "Dzikir & Doa",
+        "click": () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PersiapanHajiScreen(),
+            ),
+          );
+        }
       },
       {
         "icon": FontAwesomeIcons.play,
         "title": "Tata Cara Umroh",
+        "click": () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PersiapanHajiScreen(),
+            ),
+          );
+        }
       },
       {
         "icon": FontAwesomeIcons.play,
         "title": "Tata Cara Haji",
+        "click": () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PersiapanHajiScreen(),
+            ),
+          );
+        }
       },
       {
         "icon": FontAwesomeIcons.map,
         "title": "Peta",
+        "click": () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PersiapanHajiScreen(),
+            ),
+          );
+        }
       },
       {
         "icon": FontAwesomeIcons.mapPin,
         "title": "Lokasi Ziarah",
+        "click": () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PersiapanHajiScreen(),
+            ),
+          );
+        }
       },
     ];
     return Scaffold(
@@ -184,10 +250,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       mainAxisSpacing: 10, // Jarak antar item secara vertikal
                     ),
                     itemBuilder: (BuildContext context, int index) {
-                      return GestureDetector(
-                        onTap: () {},
+                      return InkWell(
+                        onTap: menu[index]["click"],
                         child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
