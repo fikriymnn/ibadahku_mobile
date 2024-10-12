@@ -29,13 +29,13 @@ class _KesehatanScreenState extends State<KesehatanScreen> {
         actions: [
           IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.search,
                 color: whiteColor,
               )),
           IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.menu,
                 color: whiteColor,
               )),
@@ -47,7 +47,7 @@ class _KesehatanScreenState extends State<KesehatanScreen> {
         child: Column(
           children: <Widget>[
             Container(
-              margin: EdgeInsets.only(top: 15.0),
+              margin: const EdgeInsets.only(top: 15.0),
               width: MediaQuery.of(context).size.width * 0.85,
               height: 220,
               decoration: BoxDecoration(
@@ -57,7 +57,7 @@ class _KesehatanScreenState extends State<KesehatanScreen> {
                     color: Colors.grey.withOpacity(0.5),
                     spreadRadius: 1,
                     blurRadius: 7,
-                    offset: Offset(0, 0),
+                    offset: const Offset(0, 0),
                   ),
                 ],
                 borderRadius: BorderRadius.circular(10),
@@ -93,7 +93,8 @@ class _KesehatanScreenState extends State<KesehatanScreen> {
                         pushWithoutNavBar(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => KesehatanSelengkapnyaScreen(),
+                            builder: (context) =>
+                                const KesehatanSelengkapnyaScreen(),
                           ),
                         );
                       },
@@ -108,7 +109,7 @@ class _KesehatanScreenState extends State<KesehatanScreen> {
                 ],
               ),
             ),
-            KesehatanList(),
+            const KesehatanList(),
           ],
         ),
       ),

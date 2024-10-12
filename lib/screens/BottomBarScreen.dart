@@ -17,9 +17,9 @@ class BottomBarScreen extends StatelessWidget {
         PersistentTabConfig(
           screen: const HomeScreen(),
           item: ItemConfig(
-            icon: Padding(
-              padding: const EdgeInsets.only(top: 2),
-              child: const FaIcon(FontAwesomeIcons.house),
+            icon: const Padding(
+              padding: EdgeInsets.only(top: 2),
+              child: FaIcon(FontAwesomeIcons.house),
             ),
             title: "Home",
             activeForegroundColor: primaryColor,
@@ -28,9 +28,9 @@ class BottomBarScreen extends StatelessWidget {
         PersistentTabConfig(
           screen: const SholatScreen(),
           item: ItemConfig(
-            icon: Padding(
-              padding: const EdgeInsets.only(top: 2),
-              child: const FaIcon(
+            icon: const Padding(
+              padding: EdgeInsets.only(top: 2),
+              child: FaIcon(
                 FontAwesomeIcons.solidClock,
               ),
             ),
@@ -41,9 +41,9 @@ class BottomBarScreen extends StatelessWidget {
         PersistentTabConfig(
           screen: const KiblatScreen(),
           item: ItemConfig(
-            icon: Padding(
-              padding: const EdgeInsets.only(top: 2),
-              child: const FaIcon(FontAwesomeIcons.solidCompass),
+            icon: const Padding(
+              padding: EdgeInsets.only(top: 2),
+              child: FaIcon(FontAwesomeIcons.solidCompass),
             ),
             title: "Kiblat",
             activeForegroundColor: primaryColor,
@@ -52,9 +52,9 @@ class BottomBarScreen extends StatelessWidget {
         PersistentTabConfig(
           screen: const KesehatanScreen(),
           item: ItemConfig(
-            icon: Padding(
-              padding: const EdgeInsets.only(top: 2),
-              child: const FaIcon(FontAwesomeIcons.heartPulse),
+            icon: const Padding(
+              padding: EdgeInsets.only(top: 2),
+              child: FaIcon(FontAwesomeIcons.heartPulse),
             ),
             title: "Kesehatan",
             activeForegroundColor: primaryColor,
@@ -70,7 +70,7 @@ class BottomBarScreen extends StatelessWidget {
       navBarBuilder: (navBarConfig) => Style4BottomNavBar(
         navBarConfig: navBarConfig,
       ),
-      navBarOverlap: NavBarOverlap.full(),
+      navBarOverlap: const NavBarOverlap.full(),
     );
   }
 }

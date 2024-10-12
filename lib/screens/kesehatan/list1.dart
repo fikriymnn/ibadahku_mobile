@@ -19,26 +19,26 @@ class List1 extends StatelessWidget {
         actions: [
           IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.search,
                 color: whiteColor,
               )),
           IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.menu,
                 color: whiteColor,
               )),
         ],
       ),
       body: ListView(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         children: [
-          Text(
+          const Text(
             'Kondisi yang dapat memengaruhi kesehatan jemaah haji',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 16.0),
+          const SizedBox(height: 16.0),
           buildCondition(
             number: '1',
             title: 'Suhu udara',
@@ -112,13 +112,13 @@ class List1 extends StatelessWidget {
       children: [
         Text(
           '$number. $title',
-          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         ),
-        SizedBox(height: 4.0),
+        const SizedBox(height: 4.0),
         Text('Indonesia (Ideal): $indonesia'),
         Text('Arab Saudi: $arabSaudi'),
         Text('Risiko kesehatan: $risiko'),
-        SizedBox(height: 16.0),
+        const SizedBox(height: 16.0),
       ],
     );
   }

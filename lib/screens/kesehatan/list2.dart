@@ -23,21 +23,21 @@ class List2 extends StatelessWidget {
         actions: [
           IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.search,
                 color: whiteColor,
               )),
           IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.menu,
                 color: whiteColor,
               )),
         ],
       ),
       body: ListView(
-        padding: EdgeInsets.all(16.0),
-        children: [
+        padding: const EdgeInsets.all(16.0),
+        children: const [
           Text(
             'Kebijakan Kesehatan untuk Calon Haji Indonesia',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),

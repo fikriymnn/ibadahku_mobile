@@ -20,13 +20,13 @@ class KesehatanSelengkapnyaScreen extends StatelessWidget {
         actions: [
           IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.search,
                 color: whiteColor,
               )),
           IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.menu,
                 color: whiteColor,
               )),
@@ -35,8 +35,8 @@ class KesehatanSelengkapnyaScreen extends StatelessWidget {
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 30.0),
+        child: const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 30.0),
           child: Column(
             children: <Widget>[
               Text(
