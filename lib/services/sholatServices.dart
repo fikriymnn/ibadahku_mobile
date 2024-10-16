@@ -51,6 +51,7 @@ class JadwalSholat {
     print(myLocation);
     print(timeZoneName);
     print(formattedDate);
+
     try {
       final response = await dio.get(
         'http://api.aladhan.com/v1/timings/${formattedDate}?latitude=${myLocation.latitude}&longitude=${myLocation.longitude}&timezonestring=Europe/London&method=20',
