@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
+import 'package:ibadahku_mobile/screens/home/persiapanHaji/BersabarlahScreen.dart';
 import 'package:ibadahku_mobile/screens/home/persiapanHaji/MeneladaniNabiScreen.dart';
 import 'package:ibadahku_mobile/screens/home/persiapanHaji/SegeraJadiTamuAllahScreen.dart';
 import 'package:ibadahku_mobile/screens/home/persiapanHaji/TamuAllahScreen.dart';
@@ -74,7 +75,7 @@ class PersiapanHajiScreen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const PersiapanHajiScreen(),
+              builder: (context) => const BersabarScreen(),
             ),
           );
         }
@@ -197,86 +198,89 @@ class PersiapanHajiScreen extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(5.0),
         child: GridView.builder(
             itemCount: menu.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3, // Jumlah kolom dalam grid
               crossAxisSpacing: 20, // Jarak antar item secara horizontal
               mainAxisSpacing: 20, // Jarak antar item secara vertikal
-              childAspectRatio: 0.70,
+              childAspectRatio: 0.60,
             ),
             itemBuilder: (BuildContext context, int index) {
-              return GestureDetector(
-                  onTap: menu[index]["click"],
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 110,
-                        height: 110,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(15),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.withOpacity(0.5),
-                              spreadRadius: 5,
-                              blurRadius: 7,
-                              offset:
-                                  Offset(0, 3), // Changes position of shadow
+              return Padding(
+                padding: const EdgeInsets.all(5.0),
+                child: GestureDetector(
+                    onTap: menu[index]["click"],
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: 110,
+                          height: 110,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 1,
+                                blurRadius: 3,
+                                offset:
+                                    Offset(0, 0), // Changes position of shadow
+                              ),
+                            ],
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Image.asset(
+                              menu[index]["img"],
+                              height: 100,
+                              width: 100,
+                              fit: BoxFit.fitWidth,
                             ),
-                          ],
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(5.0),
-                          child: Image.asset(
-                            menu[index]["img"],
-                            height: 100,
-                            width: 100,
-                            fit: BoxFit.fitWidth,
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      TextWidget(
-                        text: menu[index]["title"],
-                        color: blackColor,
-                        textSize: 15,
-                        isTitle: true,
-                      )
-                    ],
-                  )
-                  //  Column(
-                  //   mainAxisAlignment: MainAxisAlignment.start,
-                  //   crossAxisAlignment: CrossAxisAlignment.center,
-                  //   children: [
-                  //     Container(
-                  //       width: 60,
-                  //       height: 60,
-                  //       decoration: BoxDecoration(
-                  //         shape: BoxShape.circle,
-                  //         color: primaryColor,
-                  //       ),
-                  //       child: Center(
-                  //         child: FaIcon(
-                  //           menu[index]["icon"],
-                  //           color: whiteColor,
-                  //         ),
-                  //       ),
-                  //     ),
-                  //     TextWidget(
-                  //       text: menu[index]["title"],
-                  //       color: blackColor,
-                  //       textSize: 15,
-                  //       isTitle: true,
-                  //     )
-                  //   ],
-                  // ),
-                  );
+                        SizedBox(
+                          height: 10,
+                        ),
+                        TextWidget(
+                          text: menu[index]["title"],
+                          color: blackColor,
+                          textSize: 15,
+                          isTitle: true,
+                        )
+                      ],
+                    )
+                    //  Column(
+                    //   mainAxisAlignment: MainAxisAlignment.start,
+                    //   crossAxisAlignment: CrossAxisAlignment.center,
+                    //   children: [
+                    //     Container(
+                    //       width: 60,
+                    //       height: 60,
+                    //       decoration: BoxDecoration(
+                    //         shape: BoxShape.circle,
+                    //         color: primaryColor,
+                    //       ),
+                    //       child: Center(
+                    //         child: FaIcon(
+                    //           menu[index]["icon"],
+                    //           color: whiteColor,
+                    //         ),
+                    //       ),
+                    //     ),
+                    //     TextWidget(
+                    //       text: menu[index]["title"],
+                    //       color: blackColor,
+                    //       textSize: 15,
+                    //       isTitle: true,
+                    //     )
+                    //   ],
+                    // ),
+                    ),
+              );
             }),
       ),
     );
