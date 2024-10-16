@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
+import 'package:ibadahku_mobile/screens/home/persiapanHaji/MeneladaniNabiScreen.dart';
+import 'package:ibadahku_mobile/screens/home/persiapanHaji/SegeraJadiTamuAllahScreen.dart';
+import 'package:ibadahku_mobile/screens/home/persiapanHaji/TamuAllahScreen.dart';
+import 'package:ibadahku_mobile/screens/home/persiapanHaji/keutamaanHaji/KeutamaanHajiScreen.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
@@ -18,7 +22,7 @@ class PersiapanHajiScreen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const PersiapanHajiScreen(),
+              builder: (context) => const KeutamaanHajiScreen(),
             ),
           );
         }
@@ -31,7 +35,7 @@ class PersiapanHajiScreen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const PersiapanHajiScreen(),
+              builder: (context) => const TamuAllahScreen(),
             ),
           );
         }
@@ -44,7 +48,7 @@ class PersiapanHajiScreen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const PersiapanHajiScreen(),
+              builder: (context) => const SegeraJadiTamuAllahScreen(),
             ),
           );
         }
@@ -53,6 +57,110 @@ class PersiapanHajiScreen extends StatelessWidget {
         "icon": FontAwesomeIcons.personPraying,
         "img": "assets/kaligrafi_nabi.png",
         "title": "Meneladani Nabi",
+        "click": () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const MeneladaniNabiScreen(),
+            ),
+          );
+        }
+      },
+      {
+        "icon": FontAwesomeIcons.personPraying,
+        "img": "assets/kaligrafi_nabi.png",
+        "title": "Bersabarlah",
+        "click": () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PersiapanHajiScreen(),
+            ),
+          );
+        }
+      },
+      {
+        "icon": FontAwesomeIcons.personPraying,
+        "img": "assets/kaligrafi_nabi.png",
+        "title": "Ikhlas",
+        "click": () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PersiapanHajiScreen(),
+            ),
+          );
+        }
+      },
+      {
+        "icon": FontAwesomeIcons.personPraying,
+        "img": "assets/kaligrafi_nabi.png",
+        "title": "Jangan Berdebat",
+        "click": () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PersiapanHajiScreen(),
+            ),
+          );
+        }
+      },
+      {
+        "icon": FontAwesomeIcons.personPraying,
+        "img": "assets/kaligrafi_nabi.png",
+        "title": "Jangan Maksiat",
+        "click": () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PersiapanHajiScreen(),
+            ),
+          );
+        }
+      },
+      {
+        "icon": FontAwesomeIcons.personPraying,
+        "img": "assets/kaligrafi_nabi.png",
+        "title": "Bertaubat Sebelum Haji",
+        "click": () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PersiapanHajiScreen(),
+            ),
+          );
+        }
+      },
+      {
+        "icon": FontAwesomeIcons.personPraying,
+        "img": "assets/kaligrafi_nabi.png",
+        "title": "Harta Yang Halal",
+        "click": () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PersiapanHajiScreen(),
+            ),
+          );
+        }
+      },
+      {
+        "icon": FontAwesomeIcons.personPraying,
+        "img": "assets/kaligrafi_nabi.png",
+        "title": "Teman yang Baik",
+        "click": () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const PersiapanHajiScreen(),
+            ),
+          );
+        }
+      },
+      {
+        "icon": FontAwesomeIcons.personPraying,
+        "img": "assets/kaligrafi_nabi.png",
+        "title": "Hakikat Tabiyah",
         "click": () {
           pushWithoutNavBar(
             context,
@@ -96,7 +204,7 @@ class PersiapanHajiScreen extends StatelessWidget {
               crossAxisCount: 3, // Jumlah kolom dalam grid
               crossAxisSpacing: 20, // Jarak antar item secara horizontal
               mainAxisSpacing: 20, // Jarak antar item secara vertikal
-              childAspectRatio: 0.75,
+              childAspectRatio: 0.70,
             ),
             itemBuilder: (BuildContext context, int index) {
               return GestureDetector(
@@ -130,6 +238,9 @@ class PersiapanHajiScreen extends StatelessWidget {
                             fit: BoxFit.fitWidth,
                           ),
                         ),
+                      ),
+                      SizedBox(
+                        height: 10,
                       ),
                       TextWidget(
                         text: menu[index]["title"],
