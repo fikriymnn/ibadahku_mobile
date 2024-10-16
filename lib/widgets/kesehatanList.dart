@@ -4,6 +4,7 @@ import 'package:ibadahku_mobile/screens/kesehatan/list1.dart';
 import 'package:ibadahku_mobile/screens/kesehatan/list2.dart';
 import 'package:ibadahku_mobile/screens/kesehatan/list3.dart';
 import 'package:ibadahku_mobile/screens/kesehatan/list4.dart';
+import 'package:ibadahku_mobile/screens/kesehatan/list5.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
 class KesehatanList extends StatelessWidget {
@@ -98,7 +99,12 @@ class KesehatanList extends StatelessWidget {
               ),
               trailing: Icon(Icons.arrow_forward),
               onTap: () {
-                print('tapped');
+                pushWithoutNavBar(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => List5(),
+                  ),
+                );
               },
             ),
             ListTile(
