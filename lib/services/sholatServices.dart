@@ -54,7 +54,7 @@ class JadwalSholat {
 
     try {
       final response = await dio.get(
-        'http://api.aladhan.com/v1/timings/${formattedDate}?latitude=${myLocation.latitude}&longitude=${myLocation.longitude}&timezonestring=Europe/London&method=20',
+        'http://api.aladhan.com/v1/timings/${formattedDate}?latitude=${myLocation.latitude}&longitude=${myLocation.longitude}&method=20',
       );
       //print(response.data["data"]);
       return response.data;
