@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
 import 'package:ibadahku_mobile/screens/home/persiapanHaji/PersiapanHajiScreen.dart';
+import 'package:ibadahku_mobile/screens/home/petaJarak/PetaJarakScreen.dart';
+import 'package:ibadahku_mobile/screens/home/tataCaraHaji/TataCaraHajiScreen.dart';
+import 'package:ibadahku_mobile/screens/home/tataCaraUmroh/TataCaraUmrohScreen.dart';
 import 'package:ibadahku_mobile/services/sholatServices.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 import 'package:intl/intl.dart';
@@ -154,7 +157,7 @@ class _HomeScreenState extends State<HomeScreen> {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const PersiapanHajiScreen(),
+              builder: (context) => const TataCaraUmrohScreen(),
             ),
           );
         }
@@ -166,7 +169,7 @@ class _HomeScreenState extends State<HomeScreen> {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const PersiapanHajiScreen(),
+              builder: (context) => const TataCaraHajiScreen(),
             ),
           );
         }
@@ -178,7 +181,7 @@ class _HomeScreenState extends State<HomeScreen> {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const PersiapanHajiScreen(),
+              builder: (context) => const PetaJarakScreen(),
             ),
           );
         }

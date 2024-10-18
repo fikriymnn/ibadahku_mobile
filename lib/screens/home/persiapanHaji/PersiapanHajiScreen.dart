@@ -164,19 +164,19 @@ class PersiapanHajiScreen extends StatelessWidget {
           );
         }
       },
-      {
-        "icon": FontAwesomeIcons.personPraying,
-        "img": "assets/kaligrafi_nabi.png",
-        "title": "Hakikat Tabiyah",
-        "click": () {
-          pushWithoutNavBar(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const PersiapanHajiScreen(),
-            ),
-          );
-        }
-      },
+      // {
+      //   "icon": FontAwesomeIcons.personPraying,
+      //   "img": "assets/kaligrafi_nabi.png",
+      //   "title": "Hakikat Tabiyah",
+      //   "click": () {
+      //     pushWithoutNavBar(
+      //       context,
+      //       MaterialPageRoute(
+      //         builder: (context) => const PersiapanHajiScreen(),
+      //       ),
+      //     );
+      //   }
+      // },
     ];
     return Scaffold(
       appBar: AppBar(
