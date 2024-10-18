@@ -2,9 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
 import 'package:ibadahku_mobile/screens/home/persiapanHaji/BersabarlahScreen.dart';
+import 'package:ibadahku_mobile/screens/home/persiapanHaji/BertaubatSebelumHajiScreen.dart';
+import 'package:ibadahku_mobile/screens/home/persiapanHaji/HartaYangHalalScreen.dart';
+import 'package:ibadahku_mobile/screens/home/persiapanHaji/IkhlasScreen.dart';
+import 'package:ibadahku_mobile/screens/home/persiapanHaji/JanganBerdebatScreen.dart';
+import 'package:ibadahku_mobile/screens/home/persiapanHaji/JanganMaksiatScreen.dart';
 import 'package:ibadahku_mobile/screens/home/persiapanHaji/MeneladaniNabiScreen.dart';
 import 'package:ibadahku_mobile/screens/home/persiapanHaji/SegeraJadiTamuAllahScreen.dart';
 import 'package:ibadahku_mobile/screens/home/persiapanHaji/TamuAllahScreen.dart';
+import 'package:ibadahku_mobile/screens/home/persiapanHaji/TemanYangBaikScreen.dart';
 import 'package:ibadahku_mobile/screens/home/persiapanHaji/keutamaanHaji/KeutamaanHajiScreen.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
@@ -88,7 +94,7 @@ class PersiapanHajiScreen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const PersiapanHajiScreen(),
+              builder: (context) => const IkhlasScreen(),
             ),
           );
         }
@@ -101,7 +107,7 @@ class PersiapanHajiScreen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const PersiapanHajiScreen(),
+              builder: (context) => const JanganBerdebatScreen(),
             ),
           );
         }
@@ -114,7 +120,7 @@ class PersiapanHajiScreen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const PersiapanHajiScreen(),
+              builder: (context) => const JanganMaksiatScreen(),
             ),
           );
         }
@@ -127,7 +133,7 @@ class PersiapanHajiScreen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const PersiapanHajiScreen(),
+              builder: (context) => const BertaubatSebelumHajiScreen(),
             ),
           );
         }
@@ -140,7 +146,7 @@ class PersiapanHajiScreen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const PersiapanHajiScreen(),
+              builder: (context) => const HartaYangHalalScreen(),
             ),
           );
         }
@@ -153,7 +159,7 @@ class PersiapanHajiScreen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const PersiapanHajiScreen(),
+              builder: (context) => const TemanYangBaikScreen(),
             ),
           );
         }
