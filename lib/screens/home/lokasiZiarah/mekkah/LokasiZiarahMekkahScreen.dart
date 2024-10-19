@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
+import 'package:ibadahku_mobile/screens/home/lokasiZiarah/mekkah/ArofahScreen.dart';
+import 'package:ibadahku_mobile/screens/home/lokasiZiarah/mekkah/GuaHiroScreen.dart';
+import 'package:ibadahku_mobile/screens/home/lokasiZiarah/mekkah/GuaTsaurScreen.dart';
+import 'package:ibadahku_mobile/screens/home/lokasiZiarah/mekkah/KabahScreen.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/mekkah/KeutamaanKotaMekkahScreen.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/mekkah/MasjidilHaromScreen.dart';
+import 'package:ibadahku_mobile/screens/home/lokasiZiarah/mekkah/MinaScreen.dart';
+import 'package:ibadahku_mobile/screens/home/lokasiZiarah/mekkah/MuzdalifahScreen.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
@@ -52,7 +58,7 @@ class LokasiZiarahMekkahScreeen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const LokasiZiarahMekkahScreeen(),
+              builder: (context) => const KabahScreen(),
             ),
           );
         }
@@ -67,7 +73,7 @@ class LokasiZiarahMekkahScreeen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const LokasiZiarahMekkahScreeen(),
+              builder: (context) => const MinaScreen(),
             ),
           );
         }
@@ -82,7 +88,7 @@ class LokasiZiarahMekkahScreeen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const LokasiZiarahMekkahScreeen(),
+              builder: (context) => const ArofahScreen(),
             ),
           );
         }
@@ -97,7 +103,7 @@ class LokasiZiarahMekkahScreeen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const LokasiZiarahMekkahScreeen(),
+              builder: (context) => const MuzdalifahScreen(),
             ),
           );
         }
@@ -112,7 +118,7 @@ class LokasiZiarahMekkahScreeen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const LokasiZiarahMekkahScreeen(),
+              builder: (context) => const GuaHiroScren(),
             ),
           );
         }
@@ -127,7 +133,7 @@ class LokasiZiarahMekkahScreeen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const LokasiZiarahMekkahScreeen(),
+              builder: (context) => const GuaTsaurScreen(),
             ),
           );
         }
