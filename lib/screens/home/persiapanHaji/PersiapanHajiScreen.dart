@@ -226,7 +226,7 @@ class PersiapanHajiScreen extends StatelessWidget {
                           width: 110,
                           height: 110,
                           decoration: BoxDecoration(
-                            color: Colors.white,
+                            color: whiteColor,
                             borderRadius: BorderRadius.circular(15),
                             boxShadow: [
                               BoxShadow(
