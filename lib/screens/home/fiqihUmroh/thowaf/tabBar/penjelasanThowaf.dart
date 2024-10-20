@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import '../../../../../constants/colors.dart';
+
 class PenjelasanThowaf extends StatelessWidget {
   const PenjelasanThowaf({super.key});
 
@@ -52,11 +54,15 @@ class PenjelasanThowaf extends StatelessWidget {
       padding: const EdgeInsets.all(16.0),
       itemCount: items.length,
       itemBuilder: (context, index) {
-        return ListTile(
-          leading: items[index]['leading'],
-          title: Text(items[index]['title']),
-          trailing: Icon(Icons.arrow_forward_ios),
-          onTap: items[index]['click'],
+        return Container(
+          color:
+              (index + 1) % 2 == 0 ? primaryColor.withOpacity(0.2) : whiteColor,
+          child: ListTile(
+            leading: items[index]['leading'],
+            title: Text(items[index]['title']),
+            trailing: Icon(Icons.arrow_forward_ios),
+            onTap: items[index]['click'],
+          ),
         );
       },
     );
