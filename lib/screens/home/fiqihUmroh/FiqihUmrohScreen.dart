@@ -85,7 +85,7 @@ class FiqihUmrohScreen extends StatelessWidget {
       ),
       body: GridView.builder(
         padding: const EdgeInsets.all(16.0),
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           crossAxisSpacing: 10,
           mainAxisSpacing: 10,
