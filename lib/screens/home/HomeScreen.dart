@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/FiqihUmrohScreen.dart';
 import 'package:ibadahku_mobile/screens/home/persiapanHaji/PersiapanHajiScreen.dart';
 import 'package:ibadahku_mobile/services/sholatServices.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
@@ -117,7 +118,7 @@ class _HomeScreenState extends State<HomeScreen> {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const PersiapanHajiScreen(),
+              builder: (context) => const FiqihUmrohScreen(),
             ),
           );
         }
