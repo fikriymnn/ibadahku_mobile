@@ -12,27 +12,42 @@ class IhramMiqotScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     List items = [
       {
-        'leading': FaIcon(FontAwesomeIcons.book),
+        'leading': FaIcon(
+          FontAwesomeIcons.book,
+          color: Colors.blue,
+        ),
         'title': 'Penjelasan',
         'click': () {},
       },
       {
-        'leading': FaIcon(FontAwesomeIcons.mapLocation),
+        'leading': FaIcon(
+          FontAwesomeIcons.mapLocationDot,
+          color: Colors.red,
+        ),
         'title': 'Tempat Miqot',
         'click': () {},
       },
       {
-        'leading': FaIcon(FontAwesomeIcons.ban),
+        'leading': FaIcon(
+          FontAwesomeIcons.ban,
+          color: Colors.red,
+        ),
         'title': 'Larangan Ihram',
         'click': () {},
       },
       {
-        'leading': FaIcon(FontAwesomeIcons.triangleExclamation),
+        'leading': FaIcon(
+          FontAwesomeIcons.triangleExclamation,
+          color: const Color.fromARGB(255, 233, 200, 16),
+        ),
         'title': 'Kesalahan-kesalahan',
         'click': () {},
       },
       {
-        'leading': FaIcon(FontAwesomeIcons.bookOpen),
+        'leading': FaIcon(
+          FontAwesomeIcons.bookOpen,
+          color: Colors.green,
+        ),
         'title': 'Sunnah sebelum Ihram',
         'click': () {},
       },
