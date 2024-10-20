@@ -26,11 +26,12 @@ class List9 extends StatelessWidget {
                 color: whiteColor,
               )),
           IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.menu,
-                color: whiteColor,
-              )),
+            onPressed: () {},
+            icon: const Icon(
+              Icons.menu,
+              color: whiteColor,
+            ),
+          ),
         ],
       ),
       body: ListView(
