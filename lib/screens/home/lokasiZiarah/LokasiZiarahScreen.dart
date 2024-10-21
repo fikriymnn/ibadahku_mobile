@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
+import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/LokasiZiarahMadinahScreen.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/mekkah/LokasiZiarahMekkahScreen.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
@@ -121,7 +122,15 @@ class LokasiZiarahScreen extends StatelessWidget {
                     ),
                     Expanded(
                       child: InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          pushWithoutNavBar(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  const LokasiZiarahMadinahScreeen(),
+                            ),
+                          );
+                        },
                         child: Container(
                           width: MediaQuery.of(context).size.width,
                           height: 180,
