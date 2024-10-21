@@ -3,10 +3,13 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/KeutamaanKotaMadinahScreen.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/MasjidRaudohScreen.dart';
+import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/MesjidAlJumahScreen.dart';
+import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/MesjidAlQiblatainScreen.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/kuburBaqi/KuburBaqiScreen.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/kuburNabi/KuburNabiScreen.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/kuburSyuhadaUhud/KuburSyuhadaUhudScreen.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/masjidNabawi/MasjidNabawiScreen.dart';
+import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/mesjidQuba/MesjidQubaScren.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/mekkah/ArofahScreen.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/mekkah/GuaHiroScreen.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/mekkah/GuaTsaurScreen.dart';
@@ -124,7 +127,7 @@ class LokasiZiarahMadinahScreeen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const GuaHiroScren(),
+              builder: (context) => const MesjidQubaScreen(),
             ),
           );
         }
@@ -139,7 +142,7 @@ class LokasiZiarahMadinahScreeen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const GuaTsaurScreen(),
+              builder: (context) => const MesjidAlQiblatainScreen(),
             ),
           );
         }
@@ -154,7 +157,7 @@ class LokasiZiarahMadinahScreeen extends StatelessWidget {
           pushWithoutNavBar(
             context,
             MaterialPageRoute(
-              builder: (context) => const GuaTsaurScreen(),
+              builder: (context) => const MesjidAlJumahScreen(),
             ),
           );
         }
