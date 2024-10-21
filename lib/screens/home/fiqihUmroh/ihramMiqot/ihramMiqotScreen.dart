@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/ihramMiqot/laranganIhram.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/ihramMiqot/penjelasanIhram.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
 import '../../../../constants/colors.dart';
@@ -17,7 +19,14 @@ class IhramMiqotScreen extends StatelessWidget {
           color: Colors.blue,
         ),
         'title': 'Penjelasan',
-        'click': () {},
+        'click': () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => PenjelasanIhram(),
+            ),
+          );
+        },
       },
       {
         'leading': FaIcon(
@@ -33,7 +42,14 @@ class IhramMiqotScreen extends StatelessWidget {
           color: Colors.red,
         ),
         'title': 'Larangan Ihram',
-        'click': () {},
+        'click': () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => LaranganIhram(),
+            ),
+          );
+        },
       },
       {
         'leading': FaIcon(
