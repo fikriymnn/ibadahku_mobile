@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/ihramMiqot/kesalahanIhramMiqat.dart';
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/ihramMiqot/laranganIhram.dart';
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/ihramMiqot/penjelasanIhram.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/ihramMiqot/sunnahIhram.dart';
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/ihramMiqot/tempatMiqot.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
@@ -64,16 +66,30 @@ class IhramMiqotScreen extends StatelessWidget {
           FontAwesomeIcons.triangleExclamation,
           color: const Color.fromARGB(255, 233, 200, 16),
         ),
-        'title': 'Kesalahan-kesalahan',
-        'click': () {},
+        'title': 'Kesalahan Umum Ihram dan Miqot',
+        'click': () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => KesalahanIhramMiqat(),
+            ),
+          );
+        },
       },
       {
         'leading': FaIcon(
           FontAwesomeIcons.bookOpen,
           color: Colors.green,
         ),
-        'title': 'Sunnah sebelum Ihram',
-        'click': () {},
+        'title': 'Sunnah saat Ihram',
+        'click': () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => SunnahIhram(),
+            ),
+          );
+        },
       },
     ];
 
