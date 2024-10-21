@@ -243,140 +243,120 @@ class _DzikirDanDoaKeseharianScreenState
     },
     {
       "no": "4",
-      "title": "",
-      "ayat":
-          "اَللَّهُمَّ إِنِّيْ أَصْبَحْتُ أُشْهِدُكَ وَأُشْهِدُ حَمَلَةَ عَرْشِكَ، وَمَلاَئِكَتَكَ وَجَمِيْعَ خَلْقِكَ، أَنَّكَ أَنْتَ اللهُ لاَ إِلَـهَ إِلاَّ أَنْتَ وَحْدَكَ لاَ شَرِيْكَ لَكَ، وَأَنَّ مُحَمَّدًا عَبْدُكَ وَرَسُوْلُكَ",
-      "latin":
-          "Allahumma inni ash-bahtu usy-hiduka wa usy-hidu hamalata ‘arsyika wa malaa-ikatak wa jami’a kholqik, annaka antallahu laa ilaha illa anta wahdaka laa syariika lak, wa anna Muhammadan ‘abduka wa rosuuluk.",
+      "title": "Doa Musafir Kepada Orang Yang Ditinggalkan",
+      "ayat": "أَسْتَوْدِعُكُمُ اللَّهَ الَّذِيْ لاَ تَضِيْعُ وَدَائِعُهُ",
+      "latin": "Astaudi’ukumullaahal-ladzii laa tadhii’u wa daa-i’uh.",
       "arti":
-          "Artinya: Ya Allah, sesungguhnya aku di waktu pagi ini mempersaksikan Engkau, malaikat yang memikul ‘Arys-Mu, malaikat-malaikat dan seluruh makhluk-Mu, bahwa sesungguhnya Engkau adalah Allah, tiada ilah yang berhak disembah kecuali Engkau semata, tiada sekutu bagi-Mu dan sesungguhnya Muhammad adalah hamba dan utusan-Mu. (Dibaca 4X)",
+          "Artinya: Aku menitipkan kamu kepada Allah yang tidak akan hilang titipan-Nya.",
       "img": ""
     },
     {
       "no": "5",
-      "title": "",
+      "title": "Do’a Orang Mukim Kepada Musafir",
       "ayat":
-          "اَللَّهُمَّ إِنِّيْ أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَاْلآخِرَةِ، اَللَّهُمَّ إِنِّيْ أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِيْنِيْ وَدُنْيَايَ وَأَهْلِيْ وَمَالِيْ اللَّهُمَّ اسْتُرْ عَوْرَاتِى وَآمِنْ رَوْعَاتِى. اَللَّهُمَّ احْفَظْنِيْ مِنْ بَيْنِ يَدَيَّ، وَمِنْ خَلْفِيْ، وَعَنْ يَمِيْنِيْ وَعَنْ شِمَالِيْ، وَمِنْ فَوْقِيْ، وَأَعُوْذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِيْ",
+          "زَوَّدَكَ اللَّهُ التَّقْوَى، وَغَفَرَ ذَنْبَكَ، وَيَسَّرَ لَكَ الْخَيْرَ حَيْثُ مَا كُنْتَ",
       "latin":
-          "Allahumma innii as-alukal ‘afwa wal ‘aafiyah fid dunyaa wal aakhiroh. Allahumma innii as-alukal ‘afwa wal ‘aafiyah fii diinii wa dun-yaya wa ahlii wa maalii. Allahumas-tur ‘awrootii wa aamin row’aatii. Allahummahfazh-nii mim bayni yadayya wa min kholfii wa ‘an yamiinii wa ‘an syimaalii wa min fawqii wa a’udzu bi ‘azhomatik an ughtala min tahtii.",
+          "Zawwadakallaahut-taqwaa, wa ghofara dzanbaka, wa yassaro lakal khoiro haitsu maa kunta.",
       "arti":
-          "Artinya: Ya Allah, sesungguhnya aku memohon kebajikan dan keselamatan di dunia dan akhirat. Ya Allah, sesungguhnya aku memohon kebajikan dan keselamatan dalam agama, dunia, keluarga dan hartaku. Ya Allah, tutupilah auratku (aib dan sesuatu yang tidak layak dilihat orang) dan tenteramkanlah aku dari rasa takut. Ya Allah, peliharalah aku dari muka, belakang, kanan, kiri dan atasku. Aku berlindung dengan kebesaran-Mu, agar aku tidak disambar dari bawahku (oleh ular atau tenggelam dalam bumi dan lain-lain yang membuat aku jatuh).",
+          "Artinya: Semoga Allah memberi bekal taqwa kepadamu, mengampuni dosamu dan memudahkan kebaikan kepadamu di mana saja kamu berada.",
       "img": ""
     },
     {
       "no": "6",
-      "title": "",
+      "title": "Doa Naik Kendaraan",
       "ayat":
-          "اَللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ فَاطِرَ السَّمَاوَاتِ وَاْلأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيْكَهُ، أَشْهَدُ أَنْ لاَ إِلَـهَ إِلاَّ أَنْتَ، أَعُوْذُ بِكَ مِنْ شَرِّ نَفْسِيْ، وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ، وَأَنْ أَقْتَرِفَ عَلَى نَفْسِيْ سُوْءًا أَوْ أَجُرَّهُ إِلَى مُسْلِمٍ",
+          "سُبْحَانَ الَّذِىْ سَخَّرَلَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِيْنَ وَاِنَّآ اِلَى رَبّنَا لَمُنْقَلِبُوْن",
       "latin":
-          "Allahumma ‘aalimal ghoybi wasy syahaadah faathiros samaawaati wal ardh. Robba kulli syai-in wa maliikah. Asyhadu alla ilaha illa anta. A’udzu bika min syarri nafsii wa min syarrisy syaythooni wa syirkihi, wa an aqtarifa ‘alaa nafsii suu-an aw ajurrohu ilaa muslim.",
+          "Subhaanalladzi sakhoro lana hadza wa ma kunna lahu muqrinin, wa innaa ilaa robbina lamunqolibuun.",
       "arti":
-          "Artinya: Ya Allah, Yang Maha Mengetahui yang ghaib dan yang nyata, wahai Rabb pencipta langit dan bumi, Rabb segala sesuatu dan yang merajainya. Aku bersaksi bahwa tidak ada ilah yang berhak disembah kecuali Engkau. Aku berlindung kepadaMu dari kejahatan diriku, setan dan balatentaranya (godaan untuk berbuat syirik pada Allah), dan aku (berlindung kepada-Mu) dari berbuat kejelekan terhadap diriku atau menyeretnya kepada seorang muslim.",
+          "Artinya: Maha suci Allah yang memudahkan ini (kendaraan) bagi kami dan tiada kami mempersekutukan bagi-Nya, dan sesungguhnya kami akan kembali kepada Tuhan kami.",
       "img": ""
     },
     {
       "no": "7",
-      "title": "",
+      "title": "Doa Berpergian",
       "ayat":
-          "بِسْمِ اللَّهِ الَّذِى لاَ يَضُرُّ مَعَ اسْمِهِ شَىْءٌ فِى الأَرْضِ وَلاَ فِى السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+          "للهُ أَكْبَر، اللهُ أكْبر، الله أكْبَر، سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا، وَمَا كُنَّا لَهُ مُقْرِنِينَ، وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ، اللهُمَّ إِنَّا نَسْأَلُكَ فِي سَفَرِنَا هَذَا الْبِرَّ وَالتَّقْوَى، وَمِنَ الْعَمَلِ مَا تَرْضَى، اللهُمَّ هَوِّنْ عَلَيْنَا سَفَرَنَا هَذَا، وَاطْوِ عَنَّا بُعْدَهُ، اللهُمَّ أَنْتَ الصَّاحِبُ فِي السَّفَرِ، وَالْخَلِيفَةُ فِي الْأَهْلِ، اللهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ، وَكَآبَةِ الْمَنْظَرِ، وَسُوءِ الْمُنْقَلَبِ فِي الْمَالِ وَالْأَهْلِ",
       "latin":
-          "Bismillahilladzi laa yadhurru ma’asmihi syai-un fil ardhi wa laa fis samaa’ wa huwas samii’ul ‘aliim.",
+          "Allahu Akbar, Allahu Akbar, Allahu Akbar. Subhanalladzi sakkhoro lana hadza wa maa kunnaa lahu muqrinin, wa innaa ilaa robbinaa lamunqolibun, allahumma inna nas’aluka fii safarinaa hadzal birro wat taqwa wa minal ‘amal maa tardho, allahumma hawwin ‘alaina safarona hadza wa athwi ‘annaa bu’dahu, allahumma antas shohibu fis safari wal kholifatu fil ahli, allahumma inni a’udzubika min wa’tsaais safari wa kaabatil mandzhori wa suuil munqolibi fil maali wal ahli.",
       "arti":
-          "Artinya: Dengan nama Allah yang bila disebut, segala sesuatu di bumi dan langit tidak akan berbahaya, Dia-lah Yang Maha Mendengar lagi Maha Mengetahui. (Dibaca 3X)",
+          "Artinya: Allah Maha Besar, Allah Maha Besar, Allah Maha Besar. Maha suci Allah yang telah menundukkan (pesawat) ini bagi kami, padahal sebelumnya kami tidak mampu menguasainya, dan sesungguhnya kepada Allah lah kami kembali. Ya Allah, sesungguhnya kami memohon kebaikan dan takwa dalam perjalanan ini, kami mohon perbuatan yang Engkau ridhai.Ya Allah, permudahkanlah perjalanan kami ini, dan dekatkanlah jaraknya bagi kami. Ya Allah, Engkaulah pendampingku dalam bepergian dan mengurusi keluarga. Ya Allah, aku berlindung kepada-Mu dari kelelahan dalam bepergian, pemandangan yang menyedihkan dan kepulangan yang buruk dalam harta dan keluarga.",
       "img": ""
     },
     {
       "no": "8",
-      "title": "",
+      "title": "Doa Musafir Menjelang Subuh",
       "ayat":
-          "رَضِيْتُ بِاللهِ رَبًّا، وَبِاْلإِسْلاَمِ دِيْنًا، وَبِمُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ نَبِيًّا",
+          "سَمَّعَ سَامِعٌ بِحَمْدِ اللَّهِ، وَحُسْنِ بَلاَئِهِ عَلَيْنَا. رَبَّنَا صَاحِبْنَا، وَأَفْضِلْ عَلَيْنَا عَائِذًا بِاللَّهِ مِنَ النَّارِ",
       "latin":
-          "Rodhiitu billaahi robbaa wa bil-islaami diinaa, wa bi-muhammadin shallallaahu ‘alaihi wa sallama nabiyya.",
+          "Samma'a saami'un bihamdillaah, wa husni balaa-ihi 'alainaa. robbanaa shoohibnaa, wa afdhil 'alainaa 'aa-idzan billaahi minan-naar.",
       "arti":
-          "Artinya: Aku ridha Allah sebagai Rabb, Islam sebagai agama dan Muhammad shallallahu ‘alaihi wa sallam sebagai nabi. (Dibaca 3X)",
+          "Artinya: Semoga ada yang memperdengarkan puji kami kepada Allah (atas nikmat) dan cobaanNya yang baik bagi kami. Wahai Tuhan kami, temanilah kami (peliharalah kami) dan berilah karunia kepada kami dengan berlindung kepada Allah dari api Neraka.",
       "img": ""
     },
     {
       "no": "9",
-      "title": "",
+      "title": "Doa Singgah di Suatu Tempat",
       "ayat":
-          "يَا حَيُّ يَا قَيُّوْمُ بِرَحْمَتِكَ أَسْتَغِيْثُ، وَأَصْلِحْ لِيْ شَأْنِيْ كُلَّهُ وَلاَ تَكِلْنِيْ إِلَى نَفْسِيْ طَرْفَةَ عَيْنٍ أَبَدًا",
-      "latin":
-          "Yaa Hayyu Yaa Qoyyum, bi-rohmatika as-taghiits, wa ash-lih lii sya’nii kullahu wa laa takilnii ilaa nafsii thorfata ‘ainin Abadan.",
+          "مَنْ نَزَلَ مَنْزِلاً ثُمَّ قَالَ أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ. لَمْ يَضُرُّهُ شَىْءٌ حَتَّى يَرْتَحِلَ مِنْ مَنْزِلِهِ ذَلِكَ",
+      "latin": "Ya’udzu bi kalimaatillahit taammaati min syarri maa kholaq",
       "arti":
-          "Artinya: Wahai Rabb Yang Maha Hidup, wahai Rabb Yang Berdiri Sendiri (tidak butuh segala sesuatu), dengan rahmat-Mu aku minta pertolongan, perbaikilah segala urusanku dan jangan diserahkan kepadaku sekali pun sekejap mata (tanpa mendapat pertolongan dariMu).",
+          "Artinya: Aku berlindung dengan kalimat-kalimat Allah yang sempurna dari kejahatan makhluk yang diciptakanNya",
       "img": ""
     },
     {
       "no": "10",
-      "title": "",
+      "title": "Doa Masuk Kota Atau Desa",
       "ayat":
-          "أَصْبَحْنَا عَلَى فِطْرَةِ اْلإِسْلاَمِ وَعَلَى كَلِمَةِ اْلإِخْلاَصِ، وَعَلَى دِيْنِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ، وَعَلَى مِلَّةِ أَبِيْنَا إِبْرَاهِيْمَ، حَنِيْفًا مُسْلِمًا وَمَا كَانَ مِنَ الْمُشْرِكِيْنَ",
+          "اَللَّهُمَّ رَبَّ السَّمَاوَاتِ السَّبْعِ وَمَا أَظْلَلْنَ، وَرَبَّ اْلأَرَضِيْنَ السَّبْعِ وَمَا أَقْلَلْنَ، وَرَبَّ الشَّيَاطِيْنَ وَمَا أَضْلَلْنَ، وَرَبَّ الرِّيَاحِ وَمَا ذَرَيْنَ. أَسْأَلُكَ خَيْرَ هَذِهِ الْقَرْيَةِ وَخَيْرَ أَهْلِهَا، وَخَيْرَ مَا فِيْهَا، وَأَعُوْذُ بِكَ مِنْ شَرِّهَا وَشَرِّ أَهْلِهَا وَشَرِّ مَا فِيْهَا.",
       "latin":
-          "Ash-bahnaa ‘ala fithrotil islaam wa ‘alaa kalimatil ikhlaash, wa ‘alaa diini nabiyyinaa Muhammadin shallallahu ‘alaihi wa sallam, wa ‘alaa millati abiina Ibraahiima haniifam muslimaaw wa maa kaana minal musyrikin",
+          "Alloohumma robbas samaawaatis sab’i wamaa azhlalna, wa robbal arodhiinas sab’i wamaa aqlalna, warobbasy-syayaatiina wamaa adhlalna, warobbar riyaaha wamaa dzaroina. As-aluka khoiro haadziihil qoryati wa khoiro ahlihaa, wa khoiro maa fiihaa, wa a’uudzubika min syarriha wa syarri ahlihaa wa syarri maa fiihaa.",
       "arti":
-          "Artinya: Di waktu pagi kami memegang agama Islam, kalimat ikhlas (kalimat syahadat), agama Nabi kami Muhammad shallallahu ‘alaihi wa sallam, dan agama bapak kami Ibrahim, yang berdiri di atas jalan yang lurus, muslim dan tidak tergolong orang-orang musyrik.",
+          "Artinya: Ya Allah, Tuhan tujuh langit dan apa yang dinaunginya, Tuhan penguasa tujuh bumi dan apa yang di atasnya, Tuhan yang menguasai setan-setan dan apa yang mereka sesatkan, Tuhan yang menguasai angin dan apa yang diter-bangkannya. Aku mohon kepadaMu kebaikan desa ini, kebaikan penduduk-nya dan apa yang ada di dalamnya. Aku berlindung kepadaMu dari kejelekan desa ini, kejelekan penduduknya dan apa yang ada di dalamnya.",
       "img": ""
     },
     {
       "no": "11",
-      "title": "",
-      "ayat": "سُبْحَانَ اللهِ وَبِحَمْدِهِ",
-      "latin": "Subhanallah wa bi-hamdih.",
-      "arti": "Artinya: Maha suci Allah, aku memuji-Nya. (Dibaca 100X)",
+      "title": "Doa Masuk Pusat Keramaian",
+      "ayat":
+          "لاَ اَ إِلَهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ المُلْكُ وَلَهُ الْحَمْدُ يُحْيِيْ وَيُمِيْتُ وَهُوَ حَيٌّ لاَ يَمُوْتُ، بِيَدِه الْخَيْرُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْر.",
+      "latin":
+          "Laa ilaaha illallaahu wahdahu laa syarikalah, lahul mulku walahul hamdu yuhyi wa yumitu, wahuwa hayyun laa yamuutu, biyadihil khairu, wahuwa alaa kulli syai-in qadiir.",
+      "arti":
+          "Artinya: Tidak ada Tuhan yang disembah selain Allah, tidak ada sekutu bagi-Nya. Bagi-Nya kerajaan, bagiMu segala pujian. Dialah yang menghidupkan dan yang mematikan. Dialah yang hidup, tidak akan mati. Di tangan-Nya seluruh kebaikan. Dialah yang maha kuasa atas segala sesuatu.",
       "img": ""
     },
     {
       "no": "12",
-      "title": "",
+      "title": "Doa Pulang Berpergian",
       "ayat":
-          "لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ",
+          "اَللَّهُ أَكْبَرُ، اَللَّهُ أَكْبَرُ، اَللَّهُ أَكْبَرُ. لاَ إِلَـٰهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرٌ. آيِبُوْنَ تَائِبُوْنَ عَابِدُوْنَ لِرَبِّنَا حَامِدُوْنَ، صَدَقَ اللَّهُ وَعْدَهُ وَنَصَرَ عَبْدَهُ وَهَزَمَ اْلأَحْزَابَ وَحْدَهُ",
       "latin":
-          "Laa ilaha illallah wahdahu laa syarika lah, lahul mulku walahul hamdu wa huwa ‘ala kulli syai-in qodiir.",
+          "Allaahu akbar (3x). Laa ilaaha illallaah, wahdahu laa syariika lah, lahul mulku wa lahul hamdu, wa huwa ‘alaa kulli syai-in qodiir. Aayibuuna taa-ibuuna ‘aabiduuna lirobbinaa haamiduun, shodaqollaahu wa’dah, wa nashoro ‘abdah, wa hazamal ahzaaba wahdah.",
       "arti":
-          "Artinya: Tidak ada ilah yang berhak disembah selain Allah semata, tidak ada sekutu bagiNya. Bagi-Nya kerajaan dan segala pujian. Dia-lah yang berkuasa atas segala sesuatu. (Dibaca 10X)",
-      "img": ""
-    },
-    {
-      "no": "13",
-      "title": "",
-      "ayat":
-          "لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ",
-      "latin":
-          "Laa ilaha illallah wahdahu laa syarika lah, lahul mulku walahul hamdu wa huwa ‘ala kulli syai-in qodiir.",
-      "arti":
-          "Artinya: Tidak ada ilah yang berhak disembah selain Allah semata, tidak ada sekutu bagi-Nya. Milik Allah kerajaan dan segala pujian. Dia-lah yang berkuasa atas segala sesuatu. (Dibaca 10X dalam sehari)",
+          "Artinya: Allah Maha Besar (3x). Tidak ada sesembahan yang berhak disembah kecuali Allah, Yang Maha Esa, tiada sekutu bagiNya. Bagi-Nya kerajaan dan pujaan. Dia-lah Yang Mahakuasa atas segala sesuatu. Kami kembali dengan bertaubat, beribadah dan memuji kepada Tuhan kami. Allah telah menepati janjiNya, membela hambaNya (Muhammad) dan mengalahkan golongan musuh dengan sendirian.",
       "img": ""
     },
     {
       "no": "14",
-      "title": "",
+      "title": "Doa Masuk Mesjid",
       "ayat":
-          "سُبْحَانَ اللهِ وَبِحَمْدِهِ: عَدَدَ خَلْقِهِ، وَرِضَا نَفْسِهِ، وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ",
+          "أَعُوذُ بِاللَّهِ الْعَظِيْمِ وَبِوَجْهِهِ الْكَرِيمِ وَسُلْطَانِهِ الْقَدِيمِ مِنَ الشَّيْطَانِ الرَّحِيمِ، اَلْحَمْدُ لِلَّهِ ، اللَّهُمَّ صَلِّ وَسَلَّمْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ ؛ اللَّهُمَّ اغْفِرْ لِي ذُنُوبِي وَافْتَحْ لِي أَبْوَابَ رَحْمَتِكَ",
       "latin":
-          "Subhanallah wa bi-hamdih, ‘adada kholqih wa ridhoo nafsih. wa zinata ‘arsyih, wa midaada kalimaatih.",
+          "A’uudzu billaahil ‘adzhiimi wa biwajhihil kariimi wa sulthaanihil qadiimi minasy syaithaanir rajiim, alhamdulillah, allahumma shalli wa sallim ‘ala muhaammadin wa ‘ala aali muhammadin, allahummaghfir lii dzunuubii waftah lii abwaaba rahmatik.",
       "arti":
-          "Artinya: Maha Suci Allah, aku memujiNya sebanyak makhluk-Nya, sejauh kerelaan-Nya, seberat timbangan ‘Arsy-Nya dan sebanyak tinta tulisan kalimat-Nya. (Dibaca 3X)",
+          "Artinya: Aku berlindung kepada Allah Yang Maha Agung, kepada Zat-Nya Yang Maha Mulia dan kepada kekuasaan-Nya Yang Maha Dahulu dari setan yang terkutuk. Segala puji bagi Allah. Ya Allah, limpahkanlah sholawat dan salam kepada Nabi Muhammad dan keluarganya. Ya Allah, ampunilah dosa-dosaku dan bukakanlah untukku semua pintu rahmat-Mu.",
       "img": ""
     },
     {
-      "no": "15",
-      "title": "",
+      "no": "13",
+      "title": "Doa Keluar Masjid",
       "ayat":
-          "اَللَّهُمَّ إِنِّيْ أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلاً مُتَقَبَّلاً",
+          "أعُوْذُ بِاللهِ العَظِيْمِ وَبِوَجْهِهِ الْكَرِيْمِ وَسُلْطَانِهِ الْقَدِيْمِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. بِسْمِ اللهِ وَالْحَمْدُ لِلهِ. أَللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ. اَللَّهُمَّ اغْفِرْ لِي ذُنُوْبِي وَافْتَحْ لِي أَبْوَابَ فَضْلِكَ",
       "latin":
-          "Allahumma innii as-aluka ‘ilman naafi’a, wa rizqon thoyyibaa, wa ‘amalan mutaqobbalaa.",
+          "A’ûdzu billâhil ‘azhîm wa biwajhihil karîm wa sulthânihil qadîm minas syaithânir rajîm. Bismillâhi wal hamdulillâh. Allâhumma shalli wa sallim ‘alâ sayyidinâ muhammadin wa ‘alâ âli sayyidinâ muhammadin. Allâhummaghfirlî dzunûbî waftahlî abwâba fadhlik.",
       "arti":
-          "Artinya: Ya Allah, sungguh aku memohon kepada-Mu ilmu yang bermanfaat (bagi diriku dan orang lain), rizki yang halal dan amal yang diterima (di sisi-Mu dan mendapatkan ganjaran yang baik). (Dibaca 1X setelah salam dari sholat shubuh)",
-      "img": ""
-    },
-    {
-      "no": "16",
-      "title": "",
-      "ayat": "أَسْتَغْفِرُ اللهَ وَأَتُوْبُ إِلَيْهِ",
-      "latin": "Astagh-firullah wa atuubu ilaih.",
-      "arti":
-          "Artinya: Aku memohon ampun kepada Allah dan bertobat kepada-Nya. (Dibaca 100X dalam sehari)",
+          "Artinya: Aku berlindung kepada Allah Yang Maha Besar, kepada Dzat-Nya Yang Maha Mulia, dan kepada kerajaan-Nya Yang Sedia dari setan yang terlontar. Dengan nama Allah dan segala puji bagi Allah. Hai Tuhanku, berilah shalawat dan sejahtera atas Sayyidina Muhammad dan atas keluarga Sayyidina Muhammad. Hai Tuhanku, ampuni untukku segala dosaku. Bukakan lah bagiku segala pintu kemurahan-Mu",
       "img": ""
     },
   ];

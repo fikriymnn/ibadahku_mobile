@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ibadahku_mobile/screens/home/dzikirDanDoa/DzikirDanDoaKeseharianScreen.dart';
+import 'package:ibadahku_mobile/screens/home/dzikirDanDoa/doaUmum/DoaUmumScreen.dart';
 import 'package:ibadahku_mobile/screens/home/dzikirDanDoa/dzikirPagiDanPetang/DzikirPagiDanPetangScreen.dart';
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/ihramMiqot/ihramMiqotScreen.dart';
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/thowaf/thowafScreen.dart';
@@ -53,7 +54,14 @@ class DzikirDanDoaScreen extends StatelessWidget {
       {
         'image': 'assets/zamzam_icon.png',
         'text': 'Doa Umum(Arofah,dll)',
-        'click': () {},
+        'click': () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => DoaUmumScreen(),
+            ),
+          );
+        },
       },
     ];
 
