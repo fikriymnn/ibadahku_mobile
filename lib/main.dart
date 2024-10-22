@@ -5,17 +5,15 @@ import 'package:ibadahku_mobile/constants/colors.dart';
 import 'package:ibadahku_mobile/screens/BottomBarScreen.dart';
 
 import 'package:ibadahku_mobile/services/backgroundServices.dart';
-import 'package:just_audio/just_audio.dart';
-import 'package:just_audio_background/just_audio_background.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await JustAudioBackground.init(
-    androidNotificationChannelId: 'com.ryanheise.bg_demo.channel.audio',
-    androidNotificationChannelName: 'Audio playback',
-    androidNotificationOngoing: true,
-  );
+  // await JustAudioBackground.init(
+  //   androidNotificationChannelId: 'com.ryanheise.bg_demo.channel.audio',
+  //   androidNotificationChannelName: 'Audio playback',
+  //   androidNotificationOngoing: true,
+  // );
   await Permission.notification.isDenied.then((value) {
     if (value) {
       Permission.notification.request();

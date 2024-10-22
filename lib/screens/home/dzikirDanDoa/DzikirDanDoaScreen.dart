@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ibadahku_mobile/screens/home/dzikirDanDoa/DzikirDanDoaKeseharianScreen.dart';
+import 'package:ibadahku_mobile/screens/home/dzikirDanDoa/DzikirHajiDanUmrohScreen.dart';
 import 'package:ibadahku_mobile/screens/home/dzikirDanDoa/doaUmum/DoaUmumScreen.dart';
 import 'package:ibadahku_mobile/screens/home/dzikirDanDoa/dzikirPagiDanPetang/DzikirPagiDanPetangScreen.dart';
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/ihramMiqot/ihramMiqotScreen.dart';
@@ -19,12 +20,12 @@ class DzikirDanDoaScreen extends StatelessWidget {
         'image': 'assets/ihram_di_miqot.png',
         'text': 'Dzikir Haji & Umroh',
         'click': () {
-          // pushWithoutNavBar(
-          //   context,
-          //   MaterialPageRoute(
-          //     builder: (context) => IhramMiqotScreen(),
-          //   ),
-          // );
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => DzikirHajiDanUmrohScreen(),
+            ),
+          );
         },
       },
       {

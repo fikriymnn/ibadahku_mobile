@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
 import 'package:ibadahku_mobile/screens/home/dzikirDanDoa/doaUmum/DoaDariAlquranScreen.dart';
+import 'package:ibadahku_mobile/screens/home/dzikirDanDoa/doaUmum/DoaDariHadistScreen.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/LokasiZiarahMadinahScreen.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/mekkah/LokasiZiarahMekkahScreen.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
@@ -130,8 +131,7 @@ class DoaUmumScreen extends StatelessWidget {
                           pushWithoutNavBar(
                             context,
                             MaterialPageRoute(
-                              builder: (context) =>
-                                  const LokasiZiarahMadinahScreeen(),
+                              builder: (context) => const DoaDariHadistScreen(),
                             ),
                           );
                         },
