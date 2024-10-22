@@ -17,7 +17,7 @@ class PetaJarakScreen extends StatelessWidget {
           isTitle: true,
         ),
         backgroundColor: primaryColor,
-        actions: [
+        /* actions: [
           IconButton(
               onPressed: () {},
               icon: Icon(
@@ -30,7 +30,7 @@ class PetaJarakScreen extends StatelessWidget {
                 Icons.menu,
                 color: whiteColor,
               )),
-        ],
+        ], */
       ),
       body: SingleChildScrollView(
         child: Padding(

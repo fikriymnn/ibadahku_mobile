@@ -45,7 +45,7 @@ class KuburNabiScreen extends StatelessWidget {
             isTitle: true,
           ),
           backgroundColor: primaryColor,
-          actions: [
+          /* actions: [
             IconButton(
                 onPressed: () {},
                 icon: Icon(
@@ -58,7 +58,7 @@ class KuburNabiScreen extends StatelessWidget {
                   Icons.menu,
                   color: whiteColor,
                 )),
-          ],
+          ], */
         ),
         body: const TabBarView(
           children: [DoaKuburNabiScreen(), KesalahanKuburNabiScreen()],

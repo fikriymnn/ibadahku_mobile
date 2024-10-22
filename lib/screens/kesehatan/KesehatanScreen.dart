@@ -26,7 +26,7 @@ class _KesehatanScreenState extends State<KesehatanScreen> {
           isTitle: true,
         ),
         backgroundColor: primaryColor,
-        actions: [
+        /* actions: [
           IconButton(
               onPressed: () {},
               icon: const Icon(
@@ -39,7 +39,7 @@ class _KesehatanScreenState extends State<KesehatanScreen> {
                 Icons.menu,
                 color: whiteColor,
               )),
-        ],
+        ], */
       ),
       body: Container(
         width: MediaQuery.of(context).size.width,

@@ -50,7 +50,7 @@ class _IkhlasScreenState extends State<IkhlasScreen> {
             isTitle: true,
           ),
           backgroundColor: primaryColor,
-          actions: [
+          /* actions: [
             IconButton(
                 onPressed: () {},
                 icon: Icon(
@@ -63,7 +63,7 @@ class _IkhlasScreenState extends State<IkhlasScreen> {
                   Icons.menu,
                   color: whiteColor,
                 )),
-          ],
+          ], */
         ),
         body: Padding(
             padding: const EdgeInsets.all(15.0),

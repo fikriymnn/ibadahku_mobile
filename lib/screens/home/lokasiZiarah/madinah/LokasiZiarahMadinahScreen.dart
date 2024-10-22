@@ -174,7 +174,7 @@ class LokasiZiarahMadinahScreeen extends StatelessWidget {
             isTitle: true,
           ),
           backgroundColor: primaryColor,
-          actions: [
+          /* actions: [
             IconButton(
                 onPressed: () {},
                 icon: Icon(
@@ -187,7 +187,7 @@ class LokasiZiarahMadinahScreeen extends StatelessWidget {
                   Icons.menu,
                   color: whiteColor,
                 )),
-          ],
+          ], */
         ),
         body: ListView.builder(
             shrinkWrap: true,

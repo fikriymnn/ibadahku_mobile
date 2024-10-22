@@ -28,7 +28,7 @@ class MaqomIbrahimScreen extends StatelessWidget {
             isTitle: true,
           ),
           backgroundColor: primaryColor,
-          actions: [
+          /* actions: [
             IconButton(
                 onPressed: () {},
                 icon: const Icon(
@@ -41,7 +41,7 @@ class MaqomIbrahimScreen extends StatelessWidget {
                   Icons.menu,
                   color: whiteColor,
                 )),
-          ],
+          ], */
         ),
         body: const TabBarView(
           children: [

@@ -17,7 +17,7 @@ class KesehatanSelengkapnyaScreen extends StatelessWidget {
           isTitle: true,
         ),
         backgroundColor: primaryColor,
-        actions: [
+        /* actions: [
           IconButton(
               onPressed: () {},
               icon: const Icon(
@@ -30,7 +30,7 @@ class KesehatanSelengkapnyaScreen extends StatelessWidget {
                 Icons.menu,
                 color: whiteColor,
               )),
-        ],
+        ], */
       ),
       body: Container(
         width: MediaQuery.of(context).size.width,

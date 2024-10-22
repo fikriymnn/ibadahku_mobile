@@ -51,7 +51,7 @@ class _MesjidAlQiblatainScreenState extends State<MesjidAlQiblatainScreen> {
             isTitle: true,
           ),
           backgroundColor: primaryColor,
-          actions: [
+          /* actions: [
             IconButton(
                 onPressed: () {},
                 icon: Icon(
@@ -64,7 +64,7 @@ class _MesjidAlQiblatainScreenState extends State<MesjidAlQiblatainScreen> {
                   Icons.menu,
                   color: whiteColor,
                 )),
-          ],
+          ], */
         ),
         body: Padding(
             padding: const EdgeInsets.all(15.0),

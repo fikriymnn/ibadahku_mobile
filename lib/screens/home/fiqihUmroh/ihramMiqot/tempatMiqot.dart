@@ -19,7 +19,7 @@ class TempatMiqot extends StatelessWidget {
           isTitle: true,
         ),
         backgroundColor: primaryColor,
-        actions: [
+        /* actions: [
           IconButton(
               onPressed: () {},
               icon: Icon(
@@ -32,7 +32,7 @@ class TempatMiqot extends StatelessWidget {
                 Icons.menu,
                 color: whiteColor,
               )),
-        ],
+        ], */
       ),
       body: SizedBox(
         width: MediaQuery.of(context).size.width,

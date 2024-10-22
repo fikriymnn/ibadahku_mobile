@@ -71,7 +71,7 @@ class _TataCaraUmrohScreenState extends State<TataCaraUmrohScreen> {
           isTitle: true,
         ),
         backgroundColor: primaryColor,
-        actions: [
+        /* actions: [
           IconButton(
               onPressed: () {},
               icon: Icon(
@@ -84,7 +84,7 @@ class _TataCaraUmrohScreenState extends State<TataCaraUmrohScreen> {
                 Icons.menu,
                 color: whiteColor,
               )),
-        ],
+        ], */
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),

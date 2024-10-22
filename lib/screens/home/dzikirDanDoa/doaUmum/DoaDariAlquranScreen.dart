@@ -48,7 +48,7 @@ class _DoaDariAlQuranScreenState extends State<DoaDariAlQuranScreen> {
             isTitle: true,
           ),
           backgroundColor: primaryColor,
-          actions: [
+          /* actions: [
             IconButton(
                 onPressed: () {},
                 icon: Icon(
@@ -61,7 +61,7 @@ class _DoaDariAlQuranScreenState extends State<DoaDariAlQuranScreen> {
                   Icons.menu,
                   color: whiteColor,
                 )),
-          ],
+          ], */
         ),
         body: Padding(
             padding: const EdgeInsets.all(15.0),

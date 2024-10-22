@@ -49,7 +49,7 @@ class _JanganBerdebatScreenState extends State<JanganBerdebatScreen> {
             isTitle: true,
           ),
           backgroundColor: primaryColor,
-          actions: [
+          /* actions: [
             IconButton(
                 onPressed: () {},
                 icon: Icon(
@@ -62,7 +62,7 @@ class _JanganBerdebatScreenState extends State<JanganBerdebatScreen> {
                   Icons.menu,
                   color: whiteColor,
                 )),
-          ],
+          ], */
         ),
         body: Padding(
             padding: const EdgeInsets.all(15.0),

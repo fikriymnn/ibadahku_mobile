@@ -53,7 +53,7 @@ class DzikirPagiDanPetangScreen extends StatelessWidget {
             isTitle: true,
           ),
           backgroundColor: primaryColor,
-          actions: [
+          /* actions: [
             IconButton(
                 onPressed: () {},
                 icon: Icon(
@@ -66,7 +66,7 @@ class DzikirPagiDanPetangScreen extends StatelessWidget {
                   Icons.menu,
                   color: whiteColor,
                 )),
-          ],
+          ], */
         ),
         body: const TabBarView(
           children: [

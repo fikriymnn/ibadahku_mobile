@@ -212,7 +212,7 @@ class _HomeScreenState extends State<HomeScreen> {
           isTitle: true,
         ),
         backgroundColor: primaryColor,
-        actions: [
+        /* actions: [
           IconButton(
               onPressed: () {},
               icon: Icon(
@@ -225,7 +225,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Icons.menu,
                 color: whiteColor,
               )),
-        ],
+        ], */
       ),
       body: SingleChildScrollView(
         child: Column(
