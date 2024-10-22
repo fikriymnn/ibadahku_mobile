@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/maqomIbrahim/tabs/penjelasanMaqom.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/maqomIbrahim/tabs/sholatBelakangMaqom.dart';
 
 import '../../../../constants/colors.dart';
 import '../../../../widgets/textWidgets.dart';
@@ -16,7 +18,7 @@ class MaqomIbrahimScreen extends StatelessWidget {
           bottom: const TabBar(
             tabs: [
               Tab(text: "Penjelasan"),
-              Tab(text: "Cara & Do'a"),
+              Tab(text: "Sholat"),
             ],
           ),
           title: TextWidget(
@@ -43,12 +45,8 @@ class MaqomIbrahimScreen extends StatelessWidget {
         ),
         body: const TabBarView(
           children: [
-            Center(
-              child: Text("data"),
-            ),
-            Center(
-              child: Text("data"),
-            ),
+            PenjelasanMaqom(),
+            SholatBelakangMaqom(),
           ],
         ),
       ),

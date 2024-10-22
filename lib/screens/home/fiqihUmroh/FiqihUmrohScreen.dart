@@ -49,7 +49,7 @@ class FiqihUmrohScreen extends StatelessWidget {
           );
         },
       },
-      {
+      /* {
         'image': 'assets/zamzam_icon.png',
         'text': 'Minum Zamzam',
         'click': () {},
@@ -63,7 +63,7 @@ class FiqihUmrohScreen extends StatelessWidget {
         'image': 'assets/tahalul-icon.png',
         'text': 'Cukur Rambut',
         'click': () {},
-      },
+      }, */
     ];
 
     return Scaffold(
