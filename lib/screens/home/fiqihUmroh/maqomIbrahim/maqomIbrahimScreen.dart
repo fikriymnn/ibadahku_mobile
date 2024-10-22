@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:ibadahku_mobile/screens/home/fiqihUmroh/thowaf/tabs/caraThowaf.dart';
-import 'package:ibadahku_mobile/screens/home/fiqihUmroh/thowaf/tabs/penjelasanThowaf.dart';
 
 import '../../../../constants/colors.dart';
 import '../../../../widgets/textWidgets.dart';
 
-class ThowafScreen extends StatelessWidget {
-  const ThowafScreen({super.key});
+class MaqomIbrahimScreen extends StatelessWidget {
+  const MaqomIbrahimScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +20,7 @@ class ThowafScreen extends StatelessWidget {
             ],
           ),
           title: TextWidget(
-            text: "Thowaf",
+            text: "Maqom Ibrahim",
             color: whiteColor,
             textSize: 20,
             isTitle: true,
@@ -46,8 +43,12 @@ class ThowafScreen extends StatelessWidget {
         ),
         body: const TabBarView(
           children: [
-            PenjelasanThowaf(),
-            CaraThowaf(),
+            Center(
+              child: Text("data"),
+            ),
+            Center(
+              child: Text("data"),
+            ),
           ],
         ),
       ),
