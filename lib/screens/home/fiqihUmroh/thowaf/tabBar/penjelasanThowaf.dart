@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/thowaf/keutamaanThowaf.dart';
+import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
 import '../../../../../constants/colors.dart';
 
@@ -15,7 +17,14 @@ class PenjelasanThowaf extends StatelessWidget {
           color: Colors.blue,
         ),
         'title': 'Keutamaan Thowaf',
-        'click': () {},
+        'click': () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => KeutamaanThowaf(),
+            ),
+          );
+        },
       },
       {
         'leading': FaIcon(
