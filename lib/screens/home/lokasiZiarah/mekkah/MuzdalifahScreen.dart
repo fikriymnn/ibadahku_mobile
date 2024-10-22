@@ -81,7 +81,7 @@ class _MuzdalifahScreenState extends State<MuzdalifahScreen> {
                     height: 200,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assets/peta_miqat.jpg"),
+                            image: AssetImage("assets/muzdalifah.jpg"),
                             fit: BoxFit.cover)),
                   ),
                   Container(
@@ -253,7 +253,7 @@ class _MuzdalifahScreenState extends State<MuzdalifahScreen> {
           "Muzdalifah adalah sebuah dataran yang terletak sekitar 5 kilometer di sebelah barat Arafah dan sekitar 7 kilometer dari Mina. Secara geografis, tempat ini berada di antara dua tempat penting dalam ibadah haji, yaitu Arafah dan Mina, dan menjadi persinggahan wajib bagi jemaah haji setelah wukuf di Arafah. Datarannya relatif terbuka dan tidak memiliki bangunan atau tenda seperti di Mina, sehingga jemaah biasanya tidur di tempat terbuka di bawah langit malam.",
       "ayat": "",
       "arti": "",
-      "img": "assets/peta_miqat.jpg"
+      "img": "assets/lok-muzdalifah.png"
     },
     {
       "no": "1",

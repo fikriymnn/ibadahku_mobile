@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
+import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/LokasiZiarahMadinahScreen.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/mekkah/LokasiZiarahMekkahScreen.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
@@ -60,108 +61,77 @@ class LokasiZiarahScreen extends StatelessWidget {
                     textSize: 15),
               ),
             ),
-            Container(
-              width: MediaQuery.of(context).size.width,
-              height: 180,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 15),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: InkWell(
-                        onTap: () {
-                          pushWithoutNavBar(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) =>
-                                  const LokasiZiarahMekkahScreeen(),
-                            ),
-                          );
-                        },
-                        child: Container(
-                          width: MediaQuery.of(context).size.width,
-                          height: 180,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(5),
-                              color: whiteColor,
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  spreadRadius: 1,
-                                  blurRadius: 3,
-                                  offset: Offset(
-                                      0, 0), // Changes position of shadow
-                                ),
-                              ]),
-                          child: Center(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 80,
-                                  decoration: BoxDecoration(
-                                      image: DecorationImage(
-                                          image: AssetImage(
-                                              "assets/kaligrafi_nabi.png"))),
-                                ),
-                                TextWidget(
-                                    text: "Mekkah",
-                                    color: blackColor,
-                                    textSize: 15)
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 15,
-                    ),
-                    Expanded(
-                      child: InkWell(
-                        onTap: () {},
-                        child: Container(
-                          width: MediaQuery.of(context).size.width,
-                          height: 180,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(5),
-                              color: whiteColor,
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  spreadRadius: 1,
-                                  blurRadius: 3,
-                                  offset: Offset(
-                                      0, 0), // Changes position of shadow
-                                ),
-                              ]),
-                          child: Center(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  width: 80,
-                                  decoration: BoxDecoration(
-                                      image: DecorationImage(
-                                          image: AssetImage(
-                                              "assets/kaligrafi_nabi.png"))),
-                                ),
-                                TextWidget(
-                                    text: "Madinah",
-                                    color: blackColor,
-                                    textSize: 15)
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
+            Padding(
+              padding: EdgeInsets.only(top: 15),
+              child: GridView(
+                shrinkWrap: true,
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  crossAxisSpacing: 10,
+                  mainAxisSpacing: 10,
                 ),
+                children: [
+                  InkWell(
+                    onTap: () {
+                      pushWithoutNavBar(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const LokasiZiarahMekkahScreeen(),
+                        ),
+                      );
+                    },
+                    child: Card(
+                      color: whiteColor,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/icon_mekkah.png",
+                            height: 125,
+                            width: 125,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(height: 10),
+                          Text(
+                            "Mekkah",
+                            style: TextStyle(fontSize: 16),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      pushWithoutNavBar(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const LokasiZiarahMadinahScreeen(),
+                        ),
+                      );
+                    },
+                    child: Card(
+                      color: whiteColor,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/icon_madinah.png",
+                            height: 125,
+                            width: 125,
+                            fit: BoxFit.cover,
+                          ),
+                          SizedBox(height: 10),
+                          Text(
+                            "Madinah",
+                            style: TextStyle(fontSize: 16),
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
+                ],
               ),
             )
           ],

@@ -44,7 +44,7 @@ class _KabahScreenState extends State<KabahScreen> {
         appBar: AppBar(
           centerTitle: false,
           title: TextWidget(
-            text: "Gua Hiro",
+            text: "Ka'bah",
             color: whiteColor,
             textSize: 20,
             isTitle: true,

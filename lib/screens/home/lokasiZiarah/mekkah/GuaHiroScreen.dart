@@ -81,7 +81,7 @@ class _GuaHiroScrenState extends State<GuaHiroScren> {
                     height: 200,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assets/peta_miqat.jpg"),
+                            image: AssetImage("assets/gua-hira.jpeg"),
                             fit: BoxFit.cover)),
                   ),
                   Container(
