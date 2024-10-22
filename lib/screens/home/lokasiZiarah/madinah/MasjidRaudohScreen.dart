@@ -81,7 +81,7 @@ class _MasjidRaudohScreenState extends State<MasjidRaudohScreen> {
                     height: 200,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assets/peta_miqat.jpg"),
+                            image: AssetImage("assets/raudhah.png"),
                             fit: BoxFit.cover)),
                   ),
                   Container(

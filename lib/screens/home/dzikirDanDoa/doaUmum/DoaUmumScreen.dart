@@ -109,8 +109,8 @@ class DoaUmumScreen extends StatelessWidget {
                                   width: 80,
                                   decoration: BoxDecoration(
                                       image: DecorationImage(
-                                          image: AssetImage(
-                                              "assets/kaligrafi_nabi.png"))),
+                                          image:
+                                              AssetImage("assets/quran.png"))),
                                 ),
                                 TextWidget(
                                     text: "Dari Al-Qur'an",
@@ -160,8 +160,8 @@ class DoaUmumScreen extends StatelessWidget {
                                   width: 80,
                                   decoration: BoxDecoration(
                                       image: DecorationImage(
-                                          image: AssetImage(
-                                              "assets/kaligrafi_nabi.png"))),
+                                          image:
+                                              AssetImage("assets/hadist.png"))),
                                 ),
                                 TextWidget(
                                     text: "Dari Hadist",

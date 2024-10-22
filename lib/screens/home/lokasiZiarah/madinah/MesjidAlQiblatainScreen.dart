@@ -82,7 +82,7 @@ class _MesjidAlQiblatainScreenState extends State<MesjidAlQiblatainScreen> {
                     height: 200,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assets/peta_miqat.jpg"),
+                            image: AssetImage("assets/masjid-qiblatain.webp"),
                             fit: BoxFit.cover)),
                   ),
                   Container(

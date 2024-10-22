@@ -81,7 +81,7 @@ class _GuaTsaurScreenState extends State<GuaTsaurScreen> {
                     height: 200,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assets/peta_miqat.jpg"),
+                            image: AssetImage("assets/tsaur.jpg"),
                             fit: BoxFit.cover)),
                   ),
                   Container(

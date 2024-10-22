@@ -58,7 +58,7 @@ class _PenjelasanMejidQubaScreenState extends State<PenjelasanMejidQubaScreen> {
                     height: 200,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assets/peta_miqat.jpg"),
+                            image: AssetImage("assets/quba.jpg"),
                             fit: BoxFit.cover)),
                   ),
                   Container(

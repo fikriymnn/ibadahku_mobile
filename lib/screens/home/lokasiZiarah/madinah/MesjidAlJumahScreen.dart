@@ -81,7 +81,7 @@ class _MesjidAlJumahScreenState extends State<MesjidAlJumahScreen> {
                     height: 200,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assets/peta_miqat.jpg"),
+                            image: AssetImage("assets/masjid-jumah.jpg"),
                             fit: BoxFit.cover)),
                   ),
                   Container(

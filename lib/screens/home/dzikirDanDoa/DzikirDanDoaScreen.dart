@@ -17,7 +17,7 @@ class DzikirDanDoaScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Map> items = [
       {
-        'image': 'assets/ihram_di_miqot.png',
+        'image': 'assets/haji.png',
         'text': 'Dzikir Haji & Umroh',
         'click': () {
           pushWithoutNavBar(
@@ -29,7 +29,7 @@ class DzikirDanDoaScreen extends StatelessWidget {
         },
       },
       {
-        'image': 'assets/haji.png',
+        'image': 'assets/pagi.png',
         'text': 'Dzikir Pagi & Petang',
         'click': () {
           pushWithoutNavBar(
@@ -41,7 +41,7 @@ class DzikirDanDoaScreen extends StatelessWidget {
         },
       },
       {
-        'image': 'assets/maqom.png',
+        'image': 'assets/berdoa.png',
         'text': 'Dzikir & Doa Keseharian',
         'click': () {
           pushWithoutNavBar(
@@ -53,7 +53,7 @@ class DzikirDanDoaScreen extends StatelessWidget {
         },
       },
       {
-        'image': 'assets/zamzam_icon.png',
+        'image': 'assets/tenda.png',
         'text': 'Doa Umum(Arofah,dll)',
         'click': () {
           pushWithoutNavBar(

@@ -83,7 +83,7 @@ class _KeutamaanKotaMadinahScreenState
                     height: 200,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assets/peta_miqat.jpg"),
+                            image: AssetImage("assets/kota-madinah.jpg"),
                             fit: BoxFit.cover)),
                   ),
                   Container(

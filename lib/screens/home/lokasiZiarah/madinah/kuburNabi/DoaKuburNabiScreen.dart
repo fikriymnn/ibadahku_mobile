@@ -57,7 +57,7 @@ class _DoaKuburNabiScreenState extends State<DoaKuburNabiScreen> {
                     height: 200,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assets/peta_miqat.jpg"),
+                            image: AssetImage("assets/makam-nabi.jpeg"),
                             fit: BoxFit.cover)),
                   ),
                   Container(
