@@ -150,7 +150,7 @@ class LokasiZiarahMekkahScreeen extends StatelessWidget {
             isTitle: true,
           ),
           backgroundColor: primaryColor,
-          actions: [
+          /* actions: [
             IconButton(
                 onPressed: () {},
                 icon: Icon(
@@ -163,7 +163,7 @@ class LokasiZiarahMekkahScreeen extends StatelessWidget {
                   Icons.menu,
                   color: whiteColor,
                 )),
-          ],
+          ], */
         ),
         body: ListView.builder(
             shrinkWrap: true,

@@ -18,7 +18,7 @@ class List9 extends StatelessWidget {
           isTitle: true,
         ),
         backgroundColor: primaryColor,
-        actions: [
+        /* actions: [
           IconButton(
               onPressed: () {},
               icon: const Icon(
@@ -31,7 +31,7 @@ class List9 extends StatelessWidget {
                 Icons.menu,
                 color: whiteColor,
               )),
-        ],
+        ], */
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),

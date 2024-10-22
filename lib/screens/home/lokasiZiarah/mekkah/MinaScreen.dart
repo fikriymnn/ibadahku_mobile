@@ -50,7 +50,7 @@ class _MinaScreenState extends State<MinaScreen> {
             isTitle: true,
           ),
           backgroundColor: primaryColor,
-          actions: [
+          /* actions: [
             IconButton(
                 onPressed: () {},
                 icon: Icon(
@@ -63,7 +63,7 @@ class _MinaScreenState extends State<MinaScreen> {
                   Icons.menu,
                   color: whiteColor,
                 )),
-          ],
+          ], */
         ),
         body: Padding(
             padding: const EdgeInsets.all(15.0),
@@ -81,7 +81,7 @@ class _MinaScreenState extends State<MinaScreen> {
                     height: 200,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assets/peta_miqat.jpg"),
+                            image: AssetImage("assets/mina.jpg"),
                             fit: BoxFit.cover)),
                   ),
                   Container(
@@ -262,7 +262,7 @@ class _MinaScreenState extends State<MinaScreen> {
           "Mina juga memiliki akses jalan yang baik dan sistem transportasi yang memadai untuk membantu pergerakan jemaah antara Mina, Muzdalifah, dan Mekkah selama pelaksanaan ibadah haji. Terowongan dan jembatan juga dibangun untuk memudahkan pergerakan jemaah dalam melaksanakan prosesi melontar jumrah di lokasi yang terletak di Mina.",
       "ayat": "",
       "arti": "",
-      "img": "assets/peta_miqat.jpg"
+      "img": "assets/mina-2.jpg"
     },
     {
       "no": "",

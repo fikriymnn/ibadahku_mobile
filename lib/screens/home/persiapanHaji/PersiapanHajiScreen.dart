@@ -75,7 +75,7 @@ class PersiapanHajiScreen extends StatelessWidget {
       },
       {
         "icon": FontAwesomeIcons.personPraying,
-        "img": "assets/kaligrafi_nabi.png",
+        "img": "assets/heart.png",
         "title": "Bersabarlah",
         "click": () {
           pushWithoutNavBar(
@@ -88,7 +88,7 @@ class PersiapanHajiScreen extends StatelessWidget {
       },
       {
         "icon": FontAwesomeIcons.personPraying,
-        "img": "assets/kaligrafi_nabi.png",
+        "img": "assets/ikhlas.png",
         "title": "Ikhlas",
         "click": () {
           pushWithoutNavBar(
@@ -101,7 +101,7 @@ class PersiapanHajiScreen extends StatelessWidget {
       },
       {
         "icon": FontAwesomeIcons.personPraying,
-        "img": "assets/kaligrafi_nabi.png",
+        "img": "assets/debat.png",
         "title": "Jangan Berdebat",
         "click": () {
           pushWithoutNavBar(
@@ -114,7 +114,7 @@ class PersiapanHajiScreen extends StatelessWidget {
       },
       {
         "icon": FontAwesomeIcons.personPraying,
-        "img": "assets/kaligrafi_nabi.png",
+        "img": "assets/maksiat.png",
         "title": "Jangan Maksiat",
         "click": () {
           pushWithoutNavBar(
@@ -127,7 +127,7 @@ class PersiapanHajiScreen extends StatelessWidget {
       },
       {
         "icon": FontAwesomeIcons.personPraying,
-        "img": "assets/kaligrafi_nabi.png",
+        "img": "assets/berdoa.png",
         "title": "Bertaubat Sebelum Haji",
         "click": () {
           pushWithoutNavBar(
@@ -140,7 +140,7 @@ class PersiapanHajiScreen extends StatelessWidget {
       },
       {
         "icon": FontAwesomeIcons.personPraying,
-        "img": "assets/kaligrafi_nabi.png",
+        "img": "assets/harta.png",
         "title": "Harta Yang Halal",
         "click": () {
           pushWithoutNavBar(
@@ -153,7 +153,7 @@ class PersiapanHajiScreen extends StatelessWidget {
       },
       {
         "icon": FontAwesomeIcons.personPraying,
-        "img": "assets/kaligrafi_nabi.png",
+        "img": "assets/bersalaman.png",
         "title": "Teman yang Baik",
         "click": () {
           pushWithoutNavBar(
@@ -188,7 +188,7 @@ class PersiapanHajiScreen extends StatelessWidget {
           isTitle: true,
         ),
         backgroundColor: primaryColor,
-        actions: [
+        /* actions: [
           IconButton(
               onPressed: () {},
               icon: Icon(
@@ -201,30 +201,54 @@ class PersiapanHajiScreen extends StatelessWidget {
                 Icons.menu,
                 color: whiteColor,
               )),
-        ],
+        ], */
       ),
       body: Padding(
         padding: const EdgeInsets.all(5.0),
         child: GridView.builder(
             itemCount: menu.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 3, // Jumlah kolom dalam grid
-              crossAxisSpacing: 20, // Jarak antar item secara horizontal
-              mainAxisSpacing: 20, // Jarak antar item secara vertikal
-              childAspectRatio: 0.60,
-            ),
+                crossAxisCount: 3, // Jumlah kolom dalam grid
+                crossAxisSpacing: 10, // Jarak antar item secara horizontal
+                mainAxisSpacing: 10, // Jarak antar item secara vertikal
+                childAspectRatio: 0.80),
             itemBuilder: (BuildContext context, int index) {
               return Padding(
                 padding: const EdgeInsets.all(5.0),
                 child: GestureDetector(
                     onTap: menu[index]["click"],
-                    child: Column(
+                    child:
+
+                        // Card(
+                        //   color: whiteColor,
+                        //   child: Padding(
+                        //     padding: const EdgeInsets.all(5.0),
+                        //     child: Column(
+                        //       mainAxisAlignment: MainAxisAlignment.center,
+                        //       children: [
+                        //         Image.asset(
+                        //           menu[index]["img"],
+                        //           height: 60,
+                        //           width: 60,
+                        //           fit: BoxFit.cover,
+                        //         ),
+                        //         Text(
+                        //           menu[index]["title"],
+                        //           textAlign: TextAlign.center,
+                        //           style: TextStyle(fontSize: 12),
+                        //         ),
+                        //       ],
+                        //     ),
+                        //   ),
+                        // ),
+
+                        Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          width: 110,
-                          height: 110,
+                          width: 90,
+                          height: 90,
                           decoration: BoxDecoration(
                             color: whiteColor,
                             borderRadius: BorderRadius.circular(15),
@@ -242,8 +266,8 @@ class PersiapanHajiScreen extends StatelessWidget {
                             padding: const EdgeInsets.all(5.0),
                             child: Image.asset(
                               menu[index]["img"],
-                              height: 100,
-                              width: 100,
+                              height: 70,
+                              width: 70,
                               fit: BoxFit.fitWidth,
                             ),
                           ),

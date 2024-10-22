@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/ihramMiqot/ihramMiqotScreen.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/maqomIbrahim/maqomIbrahimScreen.dart';
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/thowaf/thowafScreen.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
@@ -39,9 +40,16 @@ class FiqihUmrohScreen extends StatelessWidget {
       {
         'image': 'assets/maqom.png',
         'text': 'Maqom Ibrahim',
-        'click': () {},
+        'click': () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => MaqomIbrahimScreen(),
+            ),
+          );
+        },
       },
-      {
+      /* {
         'image': 'assets/zamzam_icon.png',
         'text': 'Minum Zamzam',
         'click': () {},
@@ -55,7 +63,7 @@ class FiqihUmrohScreen extends StatelessWidget {
         'image': 'assets/tahalul-icon.png',
         'text': 'Cukur Rambut',
         'click': () {},
-      },
+      }, */
     ];
 
     return Scaffold(
@@ -68,7 +76,7 @@ class FiqihUmrohScreen extends StatelessWidget {
           isTitle: true,
         ),
         backgroundColor: primaryColor,
-        actions: [
+        /* actions: [
           IconButton(
               onPressed: () {},
               icon: Icon(
@@ -81,7 +89,7 @@ class FiqihUmrohScreen extends StatelessWidget {
                 Icons.menu,
                 color: whiteColor,
               )),
-        ],
+        ], */
       ),
       body: GridView.builder(
         padding: const EdgeInsets.all(16.0),

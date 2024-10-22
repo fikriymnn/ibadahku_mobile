@@ -76,7 +76,7 @@ class _SholatScreenState extends State<SholatScreen> {
           isTitle: true,
         ),
         backgroundColor: primaryColor,
-        actions: [
+        /* actions: [
           IconButton(
               onPressed: () {},
               icon: Icon(
@@ -89,7 +89,7 @@ class _SholatScreenState extends State<SholatScreen> {
                 Icons.menu,
                 color: whiteColor,
               )),
-        ],
+        ], */
       ),
       body: SingleChildScrollView(
         child: Column(

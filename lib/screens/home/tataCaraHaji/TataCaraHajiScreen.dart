@@ -20,7 +20,7 @@ class _TataCaraHajiScreenState extends State<TataCaraHajiScreen> {
   void initState() {
     super.initState();
     _controller = YoutubePlayerController(
-      initialVideoId: "XcQb07nwle4",
+      initialVideoId: "Q0a7ap-Pr6I",
       flags: const YoutubePlayerFlags(
         mute: false,
         autoPlay: false,
@@ -69,7 +69,7 @@ class _TataCaraHajiScreenState extends State<TataCaraHajiScreen> {
           isTitle: true,
         ),
         backgroundColor: primaryColor,
-        actions: [
+        /* actions: [
           IconButton(
               onPressed: () {},
               icon: Icon(
@@ -82,7 +82,7 @@ class _TataCaraHajiScreenState extends State<TataCaraHajiScreen> {
                 Icons.menu,
                 color: whiteColor,
               )),
-        ],
+        ], */
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),

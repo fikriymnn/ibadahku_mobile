@@ -27,7 +27,7 @@ class _KiblatScreenState extends State<KiblatScreen> {
           isTitle: true,
         ),
         backgroundColor: primaryColor,
-        actions: [
+        /* actions: [
           IconButton(
               onPressed: () {},
               icon: const Icon(
@@ -40,7 +40,7 @@ class _KiblatScreenState extends State<KiblatScreen> {
                 Icons.menu,
                 color: whiteColor,
               )),
-        ],
+        ], */
       ),
       body: FutureBuilder(
         future: _deviceSupport,

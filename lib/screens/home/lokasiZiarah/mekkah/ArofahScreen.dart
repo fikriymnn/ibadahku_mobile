@@ -50,7 +50,7 @@ class _ArofahScreenState extends State<ArofahScreen> {
             isTitle: true,
           ),
           backgroundColor: primaryColor,
-          actions: [
+          /* actions: [
             IconButton(
                 onPressed: () {},
                 icon: Icon(
@@ -63,7 +63,7 @@ class _ArofahScreenState extends State<ArofahScreen> {
                   Icons.menu,
                   color: whiteColor,
                 )),
-          ],
+          ], */
         ),
         body: Padding(
             padding: const EdgeInsets.all(15.0),
@@ -81,7 +81,7 @@ class _ArofahScreenState extends State<ArofahScreen> {
                     height: 200,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assets/peta_miqat.jpg"),
+                            image: AssetImage("assets/arofah.jpeg"),
                             fit: BoxFit.cover)),
                   ),
                   Container(
@@ -244,7 +244,7 @@ class _ArofahScreenState extends State<ArofahScreen> {
           "Arafah adalah sebuah dataran luas yang terletak sekitar 20 kilometer sebelah timur Mekkah, dan merupakan salah satu tempat paling sakral dalam pelaksanaan ibadah haji. Arafah menjadi lokasi utama dari salah satu rukun haji yang paling penting, yaitu wukuf di Arafah. Wukuf di Arafah terjadi pada tanggal 9 Dzulhijjah dan menjadi puncak dari seluruh rangkaian ibadah haji. Tanpa melaksanakan wukuf di Arafah, maka ibadah haji seseorang dianggap tidak sah. Oleh karena itu, Arafah memiliki keutamaan yang sangat besar dalam ajaran Islam.",
       "ayat": "",
       "arti": "",
-      "img": "assets/peta_miqat.jpg"
+      "img": "assets/arofah-2.jpg"
     },
     {
       "no": "0",
@@ -262,7 +262,7 @@ class _ArofahScreenState extends State<ArofahScreen> {
           "Wukuf di Arafah adalah salah satu rukun haji yang sangat penting, dan pelaksanaannya harus dilakukan di dalam batasan-batasan Arafah yang telah ditentukan. Batas-batas ini meliputi Wadi Urnah di sebelah barat, pegunungan di sebelah timur, Bukit Sa’d di selatan, dan bagian yang mengarah ke Masjid Namirah di utara. Memahami batasan-batasan ini sangat penting bagi jemaah agar ibadah haji mereka sah.",
       "ayat": "",
       "arti": "",
-      "img": "assets/peta_miqat.jpg"
+      "img": ""
     },
   ];
 }

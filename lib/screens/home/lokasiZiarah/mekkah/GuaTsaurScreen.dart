@@ -50,7 +50,7 @@ class _GuaTsaurScreenState extends State<GuaTsaurScreen> {
             isTitle: true,
           ),
           backgroundColor: primaryColor,
-          actions: [
+          /* actions: [
             IconButton(
                 onPressed: () {},
                 icon: Icon(
@@ -63,7 +63,7 @@ class _GuaTsaurScreenState extends State<GuaTsaurScreen> {
                   Icons.menu,
                   color: whiteColor,
                 )),
-          ],
+          ], */
         ),
         body: Padding(
             padding: const EdgeInsets.all(15.0),
@@ -81,7 +81,7 @@ class _GuaTsaurScreenState extends State<GuaTsaurScreen> {
                     height: 200,
                     decoration: BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage("assets/peta_miqat.jpg"),
+                            image: AssetImage("assets/tsaur.jpg"),
                             fit: BoxFit.cover)),
                   ),
                   Container(

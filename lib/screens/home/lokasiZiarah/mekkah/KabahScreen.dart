@@ -44,13 +44,13 @@ class _KabahScreenState extends State<KabahScreen> {
         appBar: AppBar(
           centerTitle: false,
           title: TextWidget(
-            text: "Gua Hiro",
+            text: "Ka'bah",
             color: whiteColor,
             textSize: 20,
             isTitle: true,
           ),
           backgroundColor: primaryColor,
-          actions: [
+          /* actions: [
             IconButton(
                 onPressed: () {},
                 icon: Icon(
@@ -63,7 +63,7 @@ class _KabahScreenState extends State<KabahScreen> {
                   Icons.menu,
                   color: whiteColor,
                 )),
-          ],
+          ], */
         ),
         body: Padding(
             padding: const EdgeInsets.all(15.0),

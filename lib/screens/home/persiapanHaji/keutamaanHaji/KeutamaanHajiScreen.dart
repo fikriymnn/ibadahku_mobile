@@ -49,7 +49,7 @@ class _KeutamaanHajiScreenState extends State<KeutamaanHajiScreen> {
             isTitle: true,
           ),
           backgroundColor: primaryColor,
-          actions: [
+          /* actions: [
             IconButton(
                 onPressed: () {},
                 icon: Icon(
@@ -62,7 +62,7 @@ class _KeutamaanHajiScreenState extends State<KeutamaanHajiScreen> {
                   Icons.menu,
                   color: whiteColor,
                 )),
-          ],
+          ], */
         ),
         body: Padding(
             padding: const EdgeInsets.all(15.0),

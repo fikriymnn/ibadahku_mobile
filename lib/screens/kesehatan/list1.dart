@@ -16,7 +16,7 @@ class List1 extends StatelessWidget {
           isTitle: true,
         ),
         backgroundColor: primaryColor,
-        actions: [
+        /* actions: [
           IconButton(
               onPressed: () {},
               icon: const Icon(
@@ -29,7 +29,7 @@ class List1 extends StatelessWidget {
                 Icons.menu,
                 color: whiteColor,
               )),
-        ],
+        ], */
       ),
       body: ListView(
         padding: const EdgeInsets.all(16.0),
