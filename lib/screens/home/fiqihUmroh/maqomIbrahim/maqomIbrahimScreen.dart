@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ibadahku_mobile/screens/home/fiqihUmroh/maqomIbrahim/tabs/penjelasanMaqom.dart';
-import 'package:ibadahku_mobile/screens/home/fiqihUmroh/maqomIbrahim/tabs/sholatBelakangMaqom.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/maqomIbrahim/tabBar/penjelasanMaqom.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/maqomIbrahim/tabBar/sholatBelakangMaqom.dart';
 
 import '../../../../constants/colors.dart';
 import '../../../../widgets/textWidgets.dart';

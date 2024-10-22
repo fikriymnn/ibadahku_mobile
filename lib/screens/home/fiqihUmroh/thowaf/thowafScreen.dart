@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:ibadahku_mobile/screens/home/fiqihUmroh/thowaf/tabs/caraThowaf.dart';
-import 'package:ibadahku_mobile/screens/home/fiqihUmroh/thowaf/tabs/penjelasanThowaf.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/thowaf/tabBar/caraThowaf.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/thowaf/tabBar/penjelasanThowaf.dart';
 
 import '../../../../constants/colors.dart';
 import '../../../../widgets/textWidgets.dart';
