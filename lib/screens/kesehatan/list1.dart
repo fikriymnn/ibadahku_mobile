@@ -1,9 +1,36 @@
 import 'package:flutter/material.dart';
+import 'package:ibadahku_mobile/widgets/buttonChangeSizeTextWidget.dart';
 
 import '../../constants/colors.dart';
 import '../../widgets/textWidgets.dart';
 
-class List1 extends StatelessWidget {
+class List1 extends StatefulWidget {
+  @override
+  State<List1> createState() => _List1State();
+}
+
+class _List1State extends State<List1> {
+  double sizeTitle = 18;
+  double sizeNumList = 16;
+  double sizeText = 14;
+
+  void upSize() {
+    print("object");
+    setState(() {
+      sizeTitle++;
+      sizeNumList++;
+      sizeText++;
+    });
+  }
+
+  void downSize() {
+    setState(() {
+      sizeTitle--;
+      sizeNumList--;
+      sizeText--;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,12 +58,14 @@ class List1 extends StatelessWidget {
               )),
         ], */
       ),
+      floatingActionButton:
+          ButtonChangeSizeTextWidget(UppSize: upSize, DownSize: downSize),
       body: ListView(
         padding: const EdgeInsets.all(16.0),
         children: [
-          const Text(
+          Text(
             'Kondisi yang dapat memengaruhi kesehatan jemaah haji',
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: sizeTitle, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 16.0),
           buildCondition(
@@ -112,12 +141,21 @@ class List1 extends StatelessWidget {
       children: [
         Text(
           '$number. $title',
-          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          style: TextStyle(fontSize: sizeNumList, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 4.0),
-        Text('Indonesia (Ideal): $indonesia'),
-        Text('Arab Saudi: $arabSaudi'),
-        Text('Risiko kesehatan: $risiko'),
+        Text(
+          'Indonesia (Ideal): $indonesia',
+          style: TextStyle(fontSize: sizeText),
+        ),
+        Text(
+          'Arab Saudi: $arabSaudi',
+          style: TextStyle(fontSize: sizeText),
+        ),
+        Text(
+          'Risiko kesehatan: $risiko',
+          style: TextStyle(fontSize: sizeText),
+        ),
         const SizedBox(height: 16.0),
       ],
     );

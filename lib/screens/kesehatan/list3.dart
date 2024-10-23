@@ -1,11 +1,37 @@
 import 'package:bulleted_list/bulleted_list.dart';
 import 'package:flutter/material.dart';
+import 'package:ibadahku_mobile/widgets/buttonChangeSizeTextWidget.dart';
 
 import '../../constants/colors.dart';
 import '../../widgets/textWidgets.dart';
 
-class List3 extends StatelessWidget {
+class List3 extends StatefulWidget {
   const List3({super.key});
+
+  @override
+  State<List3> createState() => _List3State();
+}
+
+class _List3State extends State<List3> {
+  double sizeTitle = 18;
+  double sizeNum = 16;
+  double sizeText = 14;
+
+  void upSize() {
+    setState(() {
+      sizeTitle++;
+      sizeNum++;
+      sizeText++;
+    });
+  }
+
+  void downSize() {
+    setState(() {
+      sizeTitle--;
+      sizeNum--;
+      sizeText--;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -34,24 +60,26 @@ class List3 extends StatelessWidget {
               )),
         ], */
       ),
+      floatingActionButton:
+          ButtonChangeSizeTextWidget(UppSize: upSize, DownSize: downSize),
       body: ListView(
         padding: const EdgeInsets.all(16.0),
-        children: const [
+        children: [
           Text(
             'Kondisi Klinis Yang Tidak Memenuhi Syarat Istithaah (Mampu) Kesehatan',
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: sizeTitle, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 25.0),
+          const SizedBox(height: 25.0),
           Text(
             '1. Kondisi Klinis Mengancam Jiwa',
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+            style: TextStyle(fontSize: sizeNum, fontWeight: FontWeight.w600),
           ),
           SizedBox(height: 10.0),
           BulletedList(
             bulletColor: blackColor,
             style: TextStyle(
               color: blackColor,
-              fontSize: 15,
+              fontSize: sizeText,
             ),
             listItems: [
               "Penyakit Paru Obstruktif Kronik stadium IV",
@@ -64,14 +92,14 @@ class List3 extends StatelessWidget {
           SizedBox(height: 10.0),
           Text(
             '2. Gangguan Jiwa Berat',
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+            style: TextStyle(fontSize: sizeNum, fontWeight: FontWeight.w600),
           ),
           SizedBox(height: 10.0),
           BulletedList(
             bulletColor: blackColor,
             style: TextStyle(
               color: blackColor,
-              fontSize: 15,
+              fontSize: sizeText,
             ),
             listItems: [
               "Skizofrenia berat",
@@ -82,14 +110,14 @@ class List3 extends StatelessWidget {
           SizedBox(height: 10.0),
           Text(
             '3. Penyakit yang Sulit Diharapkan Kesembuhannya',
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+            style: TextStyle(fontSize: sizeNum, fontWeight: FontWeight.w600),
           ),
           SizedBox(height: 10.0),
           BulletedList(
             bulletColor: blackColor,
             style: TextStyle(
               color: blackColor,
-              fontSize: 15,
+              fontSize: sizeText,
             ),
             listItems: [
               "Keganasan stadium akhir",
@@ -103,7 +131,7 @@ class List3 extends StatelessWidget {
           Text(
             "Beberapa penyakit dengan resiko tinggi yang biasa diderita Jamaah Indonesia. Penyakit ini dapat dicegah bila cukup pengetahuan dan mempersiapkan diri dalam menghadapi perubahan kondisi yang akan terjadi, misalnya adanya perubahan pola makan, pola tidur, cuaca dan suhu udara.",
             style: TextStyle(
-              fontSize: 16,
+              fontSize: sizeText,
             ),
           ),
           SizedBox(
@@ -112,7 +140,7 @@ class List3 extends StatelessWidget {
           Text(
             "Penyakit dengan resiko tinggi tersebut adalah:",
             style: TextStyle(
-              fontSize: 16,
+              fontSize: sizeText,
             ),
           ),
           SizedBox(
@@ -124,7 +152,7 @@ class List3 extends StatelessWidget {
             bulletType: BulletType.numbered,
             style: TextStyle(
               color: blackColor,
-              fontSize: 15,
+              fontSize: sizeText,
             ),
             listItems: [
               "Hipertensi",
