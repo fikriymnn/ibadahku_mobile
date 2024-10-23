@@ -1,11 +1,37 @@
 import 'package:bulleted_list/bulleted_list.dart';
 import 'package:flutter/material.dart';
+import 'package:ibadahku_mobile/widgets/buttonChangeSizeTextWidget.dart';
 
 import '../../constants/colors.dart';
 import '../../widgets/textWidgets.dart';
 
-class List4 extends StatelessWidget {
+class List4 extends StatefulWidget {
   const List4({super.key});
+
+  @override
+  State<List4> createState() => _List4State();
+}
+
+class _List4State extends State<List4> {
+  double sizeTitle = 18;
+  double sizeNum = 16;
+  double sizeText = 14;
+
+  void upSize() {
+    setState(() {
+      sizeTitle++;
+      sizeNum++;
+      sizeText++;
+    });
+  }
+
+  void downSize() {
+    setState(() {
+      sizeTitle--;
+      sizeNum--;
+      sizeText--;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -34,41 +60,43 @@ class List4 extends StatelessWidget {
               )),
         ], */
       ),
+      floatingActionButton:
+          ButtonChangeSizeTextWidget(UppSize: upSize, DownSize: downSize),
       body: ListView(
         padding: const EdgeInsets.all(16.0),
-        children: const [
+        children: [
           Text(
             'Mengoptimalkan Status Kesehatan',
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: sizeTitle, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 25.0),
+          const SizedBox(height: 25.0),
           Text(
             '1. Ketahui status kesehatan diri sendiri',
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+            style: TextStyle(fontSize: sizeNum, fontWeight: FontWeight.w600),
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           BulletedList(
             bulletColor: blackColor,
             style: TextStyle(
               color: blackColor,
-              fontSize: 15,
+              fontSize: sizeText,
             ),
             listItems: [
               "Periksa kesehatan (medical check-up) sebelum pemeriksaan yang dilakukan pemerintah untuk pemeriksaan kesehatan haji, apakah dalam keadaan sehat, sakit atau memiliki keterbatasan.",
               "Bila sehat, ditingkatkan kesehatannya sampai optimal, bila sakit diobati terlebih dahulu dan bila memiliki keterbatasan diusahakan untuk mengurangi keterbatasannya.",
             ],
           ),
-          SizedBox(height: 25.0),
+          const SizedBox(height: 25.0),
           Text(
             '2. Imunisasi meningitis meningokokus',
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+            style: TextStyle(fontSize: sizeNum, fontWeight: FontWeight.w600),
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           BulletedList(
             bulletColor: blackColor,
             style: TextStyle(
               color: blackColor,
-              fontSize: 15,
+              fontSize: sizeText,
             ),
             listItems: [
               "Banyaknya orang yang datang ke tanah suci dalam waktu yang bersamaan menyebabkan tingginya resiko tertular penyakit infeksi. Meningitis merupakan penyakit menular oleh bakteri Neisseria meningitis. Penularan sangat cepat dengan target pada selaput otak atau sumsum tulang belakang. Gejala biasanya panas tinggi, nyeri kepala, kaku kuduk, timbul bercak merah di kulit.",
@@ -76,22 +104,22 @@ class List4 extends StatelessWidget {
               "Imunisasi dilaksanakan di Puskesmas atau rumah sakit.",
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           Text(
             "3. Rutin melakukan aktivitas fisik/olahraga",
             style: TextStyle(
-              fontSize: 16,
+              fontSize: sizeNum,
               fontWeight: FontWeight.w600,
             ),
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           BulletedList(
             bulletColor: blackColor,
             style: TextStyle(
               color: blackColor,
-              fontSize: 15,
+              fontSize: sizeText,
             ),
             listItems: [
               "Ibadah haji banyak menuntut kegiatan fisik, seperti thawaf, sa'i, melempar jumrah. Maka tubuh perlu menyesuaikan kemampuan fisik dengan melakukan aktivitas fisik berolahraga ringan secara rutin sebelum berangkat ke tanah suci. Kegiatan fisik yang dianjurkan seperti jalan cepat dan jogging 5-6 km setiap kali latihan.",
@@ -99,24 +127,24 @@ class List4 extends StatelessWidget {
               "Bagi calon jemaah yang mempunyai resiko penyakit atau sudah menderita penyakit seperti hipertensi, diabetes hendaknya berkonsultasi dengan petugas kesehatan sebelum melkukan latihan.",
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           Text(
             "4. Latihan penyesuaian terhadap musim dingin di Arab Saudi",
             style: TextStyle(
-              fontSize: 16,
+              fontSize: sizeNum,
               fontWeight: FontWeight.w600,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           BulletedList(
             bulletColor: blackColor,
             style: TextStyle(
               color: blackColor,
-              fontSize: 15,
+              fontSize: sizeText,
             ),
             listItems: [
               "Perlu diperhatikan perubahan suhu cukup ekstrim dari Indonesia ke Arab Saudi.",
@@ -124,23 +152,23 @@ class List4 extends StatelessWidget {
               "Lakukan latihan penyesuaian pada dini hari sesudah subuh, di tempat terbuka, di dataran tinggi atau pegunungan dengan melakukan latihan kebugaran jasmani dan jalan kaki setiap hari selama 1 jam selama 1 pekan pada pekan terakhir menjelang keberangkatan.",
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           Text(
             "5. Pengaturan berat badan dengan gizi seimbang",
             style: TextStyle(
-              fontSize: 16,
+              fontSize: sizeNum,
               fontWeight: FontWeight.w600,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           BulletedList(
             bulletColor: blackColor,
             style: TextStyle(
-              fontSize: 15,
+              fontSize: sizeText,
               fontWeight: FontWeight.w500,
               color: blackColor,
             ),
@@ -152,23 +180,23 @@ class List4 extends StatelessWidget {
               "Pilih makanan rendah lemak, batasi yang mengandung gula dan garam.",
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           Text(
             "6. Bawa obat pribadi yang diperlukan",
             style: TextStyle(
-              fontSize: 16,
+              fontSize: sizeNum,
               fontWeight: FontWeight.w600,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           BulletedList(
             bulletColor: blackColor,
             style: TextStyle(
-              fontSize: 16,
+              fontSize: sizeText,
               fontWeight: FontWeight.w500,
               color: blackColor,
             ),
@@ -177,24 +205,24 @@ class List4 extends StatelessWidget {
               "Bila menderita penyakit tertentu yang membutuhkan pengobatan terus menerus seperti hipertensi, diabetes, siapkan obat untuk penyakit tersebut sejumlah kebutuhan selama perjalanan haji.",
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           Text(
             "7. Bawa obat pribadi yang diperlukan",
             style: TextStyle(
               fontWeight: FontWeight.w600,
-              fontSize: 16,
+              fontSize: sizeNum,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10.0,
           ),
           BulletedList(
             bulletColor: blackColor,
             style: TextStyle(
               fontWeight: FontWeight.w500,
-              fontSize: 15,
+              fontSize: sizeText,
               color: blackColor,
             ),
             listItems: [
@@ -202,24 +230,24 @@ class List4 extends StatelessWidget {
               "Bila mengalami seperti tanda di atas segera hubungi petugas kesehatan.",
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           Text(
             "8. Kesiapan menghadapi musim panas",
             style: TextStyle(
               fontWeight: FontWeight.w600,
-              fontSize: 16,
+              fontSize: sizeNum,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10.0,
           ),
           BulletedList(
             bulletColor: blackColor,
             style: TextStyle(
               fontWeight: FontWeight.w500,
-              fontSize: 15,
+              fontSize: sizeText,
               color: blackColor,
             ),
             listItems: [

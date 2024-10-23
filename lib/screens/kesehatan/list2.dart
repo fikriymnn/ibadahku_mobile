@@ -1,12 +1,35 @@
 import 'package:bulleted_list/bulleted_list.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:ibadahku_mobile/widgets/buttonChangeSizeTextWidget.dart';
 
 import '../../constants/colors.dart';
 import '../../widgets/textWidgets.dart';
 
-class List2 extends StatelessWidget {
+class List2 extends StatefulWidget {
   const List2({super.key});
+
+  @override
+  State<List2> createState() => _List2State();
+}
+
+class _List2State extends State<List2> {
+  double sizeTitle = 18;
+  double sizeText = 16;
+
+  void upSize() {
+    setState(() {
+      sizeTitle++;
+      sizeText++;
+    });
+  }
+
+  void downSize() {
+    setState(() {
+      sizeTitle--;
+      sizeText--;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -35,18 +58,20 @@ class List2 extends StatelessWidget {
               )),
         ], */
       ),
+      floatingActionButton:
+          ButtonChangeSizeTextWidget(UppSize: upSize, DownSize: downSize),
       body: ListView(
         padding: const EdgeInsets.all(16.0),
-        children: const [
+        children: [
           Text(
             'Kebijakan Kesehatan untuk Calon Haji Indonesia',
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: sizeTitle, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 16.0),
+          const SizedBox(height: 16.0),
           BulletedList(
             listOrder: ListOrder.ordered,
             style: TextStyle(
-              fontSize: 16,
+              fontSize: sizeText,
               color: blackColor,
             ),
             bulletColor: Colors.transparent,
