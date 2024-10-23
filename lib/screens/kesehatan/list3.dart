@@ -74,7 +74,7 @@ class _List3State extends State<List3> {
             '1. Kondisi Klinis Mengancam Jiwa',
             style: TextStyle(fontSize: sizeNum, fontWeight: FontWeight.w600),
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           BulletedList(
             bulletColor: blackColor,
             style: TextStyle(
@@ -89,12 +89,12 @@ class _List3State extends State<List3> {
               "Stroke perdarahan yang luas"
             ],
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           Text(
             '2. Gangguan Jiwa Berat',
             style: TextStyle(fontSize: sizeNum, fontWeight: FontWeight.w600),
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           BulletedList(
             bulletColor: blackColor,
             style: TextStyle(
@@ -107,12 +107,12 @@ class _List3State extends State<List3> {
               "Retardasi mental berat",
             ],
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           Text(
             '3. Penyakit yang Sulit Diharapkan Kesembuhannya',
             style: TextStyle(fontSize: sizeNum, fontWeight: FontWeight.w600),
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           BulletedList(
             bulletColor: blackColor,
             style: TextStyle(
@@ -125,7 +125,7 @@ class _List3State extends State<List3> {
               "Penyakit hati sirosis atau hepatoma decompensate",
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 25.0,
           ),
           Text(
@@ -134,7 +134,7 @@ class _List3State extends State<List3> {
               fontSize: sizeText,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 25.0,
           ),
           Text(
@@ -143,7 +143,7 @@ class _List3State extends State<List3> {
               fontSize: sizeText,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 12.0,
           ),
           BulletedList(
