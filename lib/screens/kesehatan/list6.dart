@@ -1,11 +1,37 @@
 import 'package:bulleted_list/bulleted_list.dart';
 import 'package:flutter/material.dart';
+import 'package:ibadahku_mobile/widgets/buttonChangeSizeTextWidget.dart';
 
 import '../../constants/colors.dart';
 import '../../widgets/textWidgets.dart';
 
-class List6 extends StatelessWidget {
+class List6 extends StatefulWidget {
   const List6({super.key});
+
+  @override
+  State<List6> createState() => _List6State();
+}
+
+class _List6State extends State<List6> {
+  double sizeTitle = 18;
+  double sizeNum = 16;
+  double sizeText = 14;
+
+  void upSize() {
+    setState(() {
+      sizeTitle++;
+      sizeNum++;
+      sizeText++;
+    });
+  }
+
+  void downSize() {
+    setState(() {
+      sizeTitle--;
+      sizeNum--;
+      sizeText--;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -34,38 +60,40 @@ class List6 extends StatelessWidget {
               )),
         ], */
       ),
+      floatingActionButton:
+          ButtonChangeSizeTextWidget(UppSize: upSize, DownSize: downSize),
       body: ListView(
         padding: const EdgeInsets.all(16),
-        children: const [
+        children: [
           Text(
             'Setelah kembali ke tanah air',
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: sizeTitle, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 25.0),
+          const SizedBox(height: 25.0),
           Text(
             "Biasanya Jemaah umroh dan haji akan mengalami batuk sekembalinya ke tanah air. Kondisi ini diperparah bila tidak langsung istirahat.",
             style: TextStyle(
-              fontSize: 15,
+              fontSize: sizeText,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Text(
             "1. Bila menderita batuk",
             style: TextStyle(
-              fontSize: 16,
+              fontSize: sizeNum,
               fontWeight: FontWeight.w600,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           BulletedList(
             bulletColor: blackColor,
             style: TextStyle(
               color: blackColor,
-              fontSize: 15,
+              fontSize: sizeText,
             ),
             listItems: [
               "Istirahat yang cukup.",
@@ -75,43 +103,43 @@ class List6 extends StatelessWidget {
               "Bila batuk terus berlanjut sebaiknya ke dokter.",
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           Text(
             "2. Tetap makan dengan gizi seimbang, buah dan sayur yang cukup",
             style: TextStyle(
-              fontSize: 16,
+              fontSize: sizeNum,
               fontWeight: FontWeight.w600,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           Text(
             "3. Melakukan aktivitas fisik ringan dan sedang minimal 30 menit setiap hari",
             style: TextStyle(
-              fontSize: 16,
+              fontSize: sizeNum,
               fontWeight: FontWeight.w600,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           Text(
             "4. Tidak merokok",
             style: TextStyle(
-              fontSize: 16,
+              fontSize: sizeNum,
               fontWeight: FontWeight.w600,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           Text(
             "5. Cukup istirahat",
             style: TextStyle(
-              fontSize: 16,
+              fontSize: sizeNum,
               fontWeight: FontWeight.w600,
             ),
           ),
