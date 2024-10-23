@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
 
 class ButtonChangeSizeTextWidget extends StatefulWidget {
-  final Function UppSize, DownSize;
+  final VoidCallback UppSize, DownSize;
   const ButtonChangeSizeTextWidget(
       {super.key, required this.UppSize, required this.DownSize});
 
@@ -21,7 +21,7 @@ class _ButtonChangeSizeTextWidgetState
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           InkWell(
-            onTap: widget.UppSize(),
+            onTap: widget.UppSize, // Memanggil callback dengan benar
             child: Container(
               width: 50,
               height: 50,
@@ -39,7 +39,7 @@ class _ButtonChangeSizeTextWidgetState
             width: 10,
           ),
           InkWell(
-            onTap: widget.DownSize(),
+            onTap: widget.DownSize, // Memanggil callback dengan benar
             child: Container(
               width: 50,
               height: 50,
