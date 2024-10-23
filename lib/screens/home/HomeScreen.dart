@@ -259,7 +259,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 (BuildContext context, AsyncSnapshot snapshot) {
                               if (snapshot.connectionState ==
                                   ConnectionState.waiting) {
-                                return Text("");
+                                return CircularProgressIndicator.adaptive();
                               } else if (snapshot.hasError) {
                                 return Text('Error: ${snapshot.error}');
                               } else if (snapshot.hasData) {

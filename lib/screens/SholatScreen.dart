@@ -123,7 +123,7 @@ class _SholatScreenState extends State<SholatScreen> {
                                 (BuildContext context, AsyncSnapshot snapshot) {
                               if (snapshot.connectionState ==
                                   ConnectionState.waiting) {
-                                return Text("");
+                                return CircularProgressIndicator.adaptive();
                               } else if (snapshot.hasError) {
                                 return Text('Error: ${snapshot.error}');
                               } else if (snapshot.hasData) {
@@ -183,7 +183,15 @@ class _SholatScreenState extends State<SholatScreen> {
                 future: getJadwal(),
                 builder: (BuildContext context, AsyncSnapshot snapshot) {
                   if (snapshot.connectionState == ConnectionState.waiting) {
-                    return Text("");
+                    return Center(
+                      child: Text(
+                        "Loading...",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    );
                   } else if (snapshot.hasError) {
                     return Text('Error: ${snapshot.error}');
                   } else if (snapshot.hasData) {
