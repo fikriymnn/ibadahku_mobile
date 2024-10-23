@@ -1,11 +1,37 @@
 import 'package:bulleted_list/bulleted_list.dart';
 import 'package:flutter/material.dart';
+import 'package:ibadahku_mobile/widgets/buttonChangeSizeTextWidget.dart';
 
 import '../../constants/colors.dart';
 import '../../widgets/textWidgets.dart';
 
-class List5 extends StatelessWidget {
+class List5 extends StatefulWidget {
   const List5({super.key});
+
+  @override
+  State<List5> createState() => _List5State();
+}
+
+class _List5State extends State<List5> {
+  double sizeTitle = 18;
+  double sizeNum = 16;
+  double sizeText = 14;
+
+  void upSize() {
+    setState(() {
+      sizeTitle++;
+      sizeNum++;
+      sizeText++;
+    });
+  }
+
+  void downSize() {
+    setState(() {
+      sizeTitle--;
+      sizeNum--;
+      sizeText--;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -34,24 +60,26 @@ class List5 extends StatelessWidget {
               )),
         ], */
       ),
+      floatingActionButton:
+          ButtonChangeSizeTextWidget(UppSize: upSize, DownSize: downSize),
       body: ListView(
         padding: const EdgeInsets.all(16.0),
-        children: const [
+        children: [
           Text(
             'Menjaga Kesehatan Selama Umroh dan Haji',
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: sizeTitle, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 25.0),
+          const SizedBox(height: 25.0),
           Text(
             '1. Menjaga pola makan',
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+            style: TextStyle(fontSize: sizeNum, fontWeight: FontWeight.w600),
           ),
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           BulletedList(
             bulletColor: blackColor,
             style: TextStyle(
               color: blackColor,
-              fontSize: 15,
+              fontSize: sizeText,
             ),
             listItems: [
               "Pola makan yang dianjurkan adalah makan teratur tiga kali sehari, jangan terlambat.",
@@ -67,24 +95,24 @@ class List5 extends StatelessWidget {
               "Cuci tangan memakai sabun sebelum dan sesudah makan.",
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           Text(
             "2. Menjaga kebersihan diri dan lingkungan",
             style: TextStyle(
-              fontSize: 16,
+              fontSize: sizeNum,
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           BulletedList(
             bulletColor: Colors.transparent,
             style: TextStyle(
               color: blackColor,
-              fontSize: 15,
+              fontSize: sizeText,
               fontWeight: FontWeight.w600,
             ),
             listItems: [
@@ -93,14 +121,14 @@ class List5 extends StatelessWidget {
                 bullet: Text(
                   "-",
                   style: TextStyle(
-                    fontSize: 15,
+                    fontSize: sizeText,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
                 bulletColor: blackColor,
                 style: TextStyle(
                   color: blackColor,
-                  fontSize: 15,
+                  fontSize: sizeText,
                 ),
                 listItems: [
                   "Mandi cukup sehari sekali",
@@ -114,14 +142,14 @@ class List5 extends StatelessWidget {
                 bullet: Text(
                   "-",
                   style: TextStyle(
-                    fontSize: 15,
+                    fontSize: sizeText,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
                 bulletColor: blackColor,
                 style: TextStyle(
                   color: blackColor,
-                  fontSize: 15,
+                  fontSize: sizeText,
                 ),
                 listItems: [
                   "Menjaga kerapian dan kebersihan kamar, atur barang secara rapi.",
@@ -136,14 +164,14 @@ class List5 extends StatelessWidget {
                 bullet: Text(
                   "-",
                   style: TextStyle(
-                    fontSize: 15,
+                    fontSize: sizeText,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
                 bulletColor: blackColor,
                 style: TextStyle(
                   color: blackColor,
-                  fontSize: 15,
+                  fontSize: sizeText,
                 ),
                 listItems: [
                   "Sediakan kantong plastik untuk membuang tisu atau pembalut wanita, karena biasanya tidak tersedia tempat sampah.",
