@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:another_flutter_splash_screen/another_flutter_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
 import 'package:ibadahku_mobile/screens/BottomBarScreen.dart';
@@ -35,7 +36,24 @@ class _MyAppState extends State<MyApp> {
         colorScheme: ColorScheme.fromSeed(seedColor: primaryColor),
         useMaterial3: true,
       ),
-      home: const BottomBarScreen(),
+      home: FlutterSplashScreen.scale(
+        gradient: const LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            backgroundColor,
+            whiteColor,
+          ],
+        ),
+        childWidget: SizedBox(
+          height: 100,
+          child: Image.asset("assets/ibadahku-logo2.png"),
+        ),
+        duration: const Duration(milliseconds: 2500),
+        animationDuration: const Duration(milliseconds: 1000),
+        onAnimationEnd: () => debugPrint("On Scale End"),
+        nextScreen: const BottomBarScreen(),
+      ),
     );
   }
 }
