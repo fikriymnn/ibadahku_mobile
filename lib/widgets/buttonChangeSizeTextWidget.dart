@@ -21,7 +21,11 @@ class _ButtonChangeSizeTextWidgetState
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           InkWell(
-            onTap: widget.UppSize, // Memanggil callback dengan benar
+            onTap: () {
+              setState(() {
+                widget.UppSize();
+              });
+            }, // Memanggil callback dengan benar
             child: Container(
               width: 50,
               height: 50,
@@ -39,7 +43,11 @@ class _ButtonChangeSizeTextWidgetState
             width: 10,
           ),
           InkWell(
-            onTap: widget.DownSize, // Memanggil callback dengan benar
+            onTap: () {
+              setState(() {
+                widget.DownSize();
+              });
+            }, // Memanggil callback dengan benar
             child: Container(
               width: 50,
               height: 50,
