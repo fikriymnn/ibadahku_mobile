@@ -44,9 +44,9 @@ class ThowafScreen extends StatelessWidget {
                 )),
           ], */
         ),
-        body: const TabBarView(
+        body: TabBarView(
           children: [
-            PenjelasanThowaf(),
+            const PenjelasanThowaf(),
             CaraThowaf(),
           ],
         ),
