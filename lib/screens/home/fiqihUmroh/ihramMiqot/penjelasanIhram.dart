@@ -231,11 +231,14 @@ class PenjelasanIhram extends StatelessWidget {
                       SizedBox(
                         height: 25,
                       ),
-                      Text(
-                        "لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ، لَبَّيْكَ لَا شَرِيْكَ لَكَ لَبَّيْكَ، إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ، لاَ شَرِيْكَ لَكَ",
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: upDown.sizeArabic),
+                      Center(
+                        child: Text(
+                          textAlign: TextAlign.right,
+                          "لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ، لَبَّيْكَ لَا شَرِيْكَ لَكَ لَبَّيْكَ، إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ، لاَ شَرِيْكَ لَكَ",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: upDown.sizeArabic),
+                        ),
                       ),
                       SizedBox(
                         height: 10,

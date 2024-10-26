@@ -52,7 +52,7 @@ class TempatMiqot extends StatelessWidget {
         height: MediaQuery.of(context).size.height,
         child: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16.0),
             child: ValueListenableBuilder<upDownSize>(
                 valueListenable: upDownNotifier,
                 builder: (context, upDown, child) {
@@ -67,7 +67,7 @@ class TempatMiqot extends StatelessWidget {
                           color: blackColor,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(
@@ -77,7 +77,7 @@ class TempatMiqot extends StatelessWidget {
                           color: blackColor,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(
@@ -87,7 +87,7 @@ class TempatMiqot extends StatelessWidget {
                           color: blackColor,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(
@@ -97,7 +97,7 @@ class TempatMiqot extends StatelessWidget {
                             fontSize: upDown.sizeNum),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(left: 16.0, top: 5.0),
+                        padding: const EdgeInsets.only(left: 16.0, top: 5.0),
                         child: Text(
                           "Miqot zamani adalah waktu yang ditetapkan untuk melaksanakan ibadah haji, dimulai dari awal bulan Syawal hingga fajar tanggal 10 Dzulhijjah, hari raya Idul Adha. Sementara untuk umrah, tidak ada batas waktu tertentu sehingga bisa dilakukan kapan saja sepanjang tahun. Jika miqot zamani tidak dilaksanakan pada waktu yang ditetapkan, ibadah haji dianggap tidak sah dan hanya dihitung sebagai umrah biasa.",
                           style: TextStyle(
@@ -106,7 +106,7 @@ class TempatMiqot extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(
@@ -116,7 +116,7 @@ class TempatMiqot extends StatelessWidget {
                             fontSize: upDown.sizeNum),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(left: 16.0, top: 5.0),
+                        padding: const EdgeInsets.only(left: 16.0, top: 5.0),
                         child: Text(
                           "Miqot makani adalah tempat yang telah ditentukan untuk memulai ibadah haji atau umrah. Jamaah diharuskan memakai pakaian ihram dan berniat untuk melaksanakan ibadah. Lokasi miqot makani dapat berbeda bagi setiap jamaah, tergantung pada tempat mereka memulai ihram.",
                           style: TextStyle(
@@ -125,7 +125,7 @@ class TempatMiqot extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(
@@ -135,7 +135,7 @@ class TempatMiqot extends StatelessWidget {
                           color: blackColor,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 25,
                       ),
                       Text(
@@ -146,12 +146,12 @@ class TempatMiqot extends StatelessWidget {
                           color: blackColor,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
-                      Text(
+                      const Text(
                           "Beberapa lokasi miqat makani yang telah ditetapkan oleh Rasulullah SAW adalah:"),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(
@@ -161,7 +161,7 @@ class TempatMiqot extends StatelessWidget {
                             fontSize: upDown.sizeNum),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(left: 16.0, top: 5.0),
+                        padding: const EdgeInsets.only(left: 16.0, top: 5.0),
                         child: Text(
                           "Juhfah terletak sekitar 183 km barat laut Mekkah dan merupakan miqat bagi jamaah dari Mesir, Yordania, Suriah, dan Lebanon.",
                           style: TextStyle(
@@ -170,7 +170,7 @@ class TempatMiqot extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(
@@ -180,7 +180,7 @@ class TempatMiqot extends StatelessWidget {
                             fontSize: upDown.sizeNum),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(left: 16.0, top: 5.0),
+                        padding: const EdgeInsets.only(left: 16.0, top: 5.0),
                         child: Text(
                           "Dzulhulaifah, juga dikenal sebagai Bir Ali, adalah miqat bagi jamaah yang datang dari Madinah, termasuk jamaah Indonesia.",
                           style: TextStyle(
@@ -189,7 +189,7 @@ class TempatMiqot extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(
@@ -199,7 +199,7 @@ class TempatMiqot extends StatelessWidget {
                             fontSize: upDown.sizeNum),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(left: 16.0, top: 5.0),
+                        padding: const EdgeInsets.only(left: 16.0, top: 5.0),
                         child: Text(
                           "Berada dekat pegunungan Taif, Qarnul Manazil menjadi miqat bagi jamaah dari Indonesia dan Dubai.",
                           style: TextStyle(
@@ -208,7 +208,7 @@ class TempatMiqot extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(
@@ -218,7 +218,7 @@ class TempatMiqot extends StatelessWidget {
                             fontSize: upDown.sizeNum),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(left: 16.0, top: 5.0),
+                        padding: const EdgeInsets.only(left: 16.0, top: 5.0),
                         child: Text(
                           "Zatu Irqin terletak sekitar 94 km timur laut Mekkah dan menjadi miqat bagi jamaah dari Irak, Iran, dan negara-negara sekitarnya.",
                           style: TextStyle(
@@ -227,7 +227,7 @@ class TempatMiqot extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(
@@ -237,7 +237,7 @@ class TempatMiqot extends StatelessWidget {
                             fontSize: upDown.sizeNum),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(left: 16.0, top: 5.0),
+                        padding: const EdgeInsets.only(left: 16.0, top: 5.0),
                         child: Text(
                           "Terletak sekitar 92 km dari tenggara Mekkah, Yalamlam menjadi miqat bagi jamaah dari Yaman, Pakistan, India, Jepang, dan China. Jamaah Indonesia yang melewati Yalamlam akan melakukan ihram di pesawat ketika mendekati lokasi ini.",
                           style: TextStyle(
@@ -246,7 +246,7 @@ class TempatMiqot extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 25,
                       ),
                       Text(
@@ -257,7 +257,7 @@ class TempatMiqot extends StatelessWidget {
                           color: blackColor,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(
@@ -267,7 +267,7 @@ class TempatMiqot extends StatelessWidget {
                           color: blackColor,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(
@@ -277,7 +277,7 @@ class TempatMiqot extends StatelessWidget {
                           color: blackColor,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 25,
                       ),
                       Text(
@@ -288,7 +288,7 @@ class TempatMiqot extends StatelessWidget {
                           color: blackColor,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Text(
@@ -298,7 +298,7 @@ class TempatMiqot extends StatelessWidget {
                           color: blackColor,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10.0,
                       ),
                       BulletedList(
