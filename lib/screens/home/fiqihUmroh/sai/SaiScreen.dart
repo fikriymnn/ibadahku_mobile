@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:ibadahku_mobile/screens/home/fiqihUmroh/maqomIbrahim/tabBar/penjelasanMaqom.dart';
-import 'package:ibadahku_mobile/screens/home/fiqihUmroh/maqomIbrahim/tabBar/sholatBelakangMaqom.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/sai/tabBar/penjelasanSai.dart';
 
 import '../../../../constants/colors.dart';
 import '../../../../widgets/textWidgets.dart';
 
-class MaqomIbrahimScreen extends StatelessWidget {
-  const MaqomIbrahimScreen({super.key});
+class SaiScreen extends StatelessWidget {
+  const SaiScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,11 +17,11 @@ class MaqomIbrahimScreen extends StatelessWidget {
           bottom: const TabBar(
             tabs: [
               Tab(text: "Penjelasan"),
-              Tab(text: "Sholat"),
+              Tab(text: "Tata Cara"),
             ],
           ),
           title: TextWidget(
-            text: "Maqom Ibrahim",
+            text: "Sa'i",
             color: whiteColor,
             textSize: 20,
             isTitle: true,
@@ -45,8 +44,8 @@ class MaqomIbrahimScreen extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            PenjelasanMaqom(),
-            SholatBelakangMaqom(),
+            PenjelasanSai(),
+            Center(),
           ],
         ),
       ),

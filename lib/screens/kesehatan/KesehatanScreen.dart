@@ -93,8 +93,7 @@ class _KesehatanScreenState extends State<KesehatanScreen> {
                         pushWithoutNavBar(
                           context,
                           MaterialPageRoute(
-                            builder: (context) =>
-                                const KesehatanSelengkapnyaScreen(),
+                            builder: (context) => KesehatanSelengkapnyaScreen(),
                           ),
                         );
                       },
