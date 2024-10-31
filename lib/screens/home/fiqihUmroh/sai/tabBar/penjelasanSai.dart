@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/sai/pengertianSai.dart';
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/sai/saiRukunUmroh.dart';
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/sai/sejarahSai.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/sai/syaratSai.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
 import '../../../../../constants/colors.dart';
@@ -52,7 +53,14 @@ class PenjelasanSai extends StatelessWidget {
       {
         'icon': const FaIcon(FontAwesomeIcons.bookOpenReader),
         'title': "Syarat-syarat Sa'i",
-        'click': () {},
+        'click': () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => SyaratSai(),
+            ),
+          );
+        },
       },
     ];
     return ListView.builder(
