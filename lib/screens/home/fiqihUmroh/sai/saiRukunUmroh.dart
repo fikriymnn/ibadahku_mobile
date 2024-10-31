@@ -15,7 +15,7 @@ class SaiRukunUmroh extends StatelessWidget {
       appBar: AppBar(
         centerTitle: false,
         title: TextWidget(
-          text: "Pengertian Sa'i",
+          text: "Sa'i: Rukun Haji & Umroh",
           color: whiteColor,
           textSize: 20,
           isTitle: true,
