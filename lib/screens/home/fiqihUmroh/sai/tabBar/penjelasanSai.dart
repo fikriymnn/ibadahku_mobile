@@ -15,7 +15,10 @@ class PenjelasanSai extends StatelessWidget {
   Widget build(BuildContext context) {
     List menuList = [
       {
-        'icon': const FaIcon(FontAwesomeIcons.book),
+        'icon': const FaIcon(
+          FontAwesomeIcons.book,
+          color: Colors.blue,
+        ),
         'title': "Pengertian",
         'click': () {
           pushWithoutNavBar(
@@ -27,7 +30,10 @@ class PenjelasanSai extends StatelessWidget {
         },
       },
       {
-        'icon': const FaIcon(FontAwesomeIcons.clockRotateLeft),
+        'icon': const FaIcon(
+          FontAwesomeIcons.clockRotateLeft,
+          color: Colors.red,
+        ),
         'title': "Sejarah",
         'click': () {
           pushWithoutNavBar(
@@ -39,7 +45,10 @@ class PenjelasanSai extends StatelessWidget {
         },
       },
       {
-        'icon': const FaIcon(FontAwesomeIcons.kaaba),
+        'icon': const FaIcon(
+          FontAwesomeIcons.kaaba,
+          color: Colors.green,
+        ),
         'title': "Rukun Haji & Umroh",
         'click': () {
           pushWithoutNavBar(
@@ -51,7 +60,10 @@ class PenjelasanSai extends StatelessWidget {
         },
       },
       {
-        'icon': const FaIcon(FontAwesomeIcons.bookOpenReader),
+        'icon': const FaIcon(
+          FontAwesomeIcons.bookOpenReader,
+          color: primaryColor,
+        ),
         'title': "Syarat-syarat Sa'i",
         'click': () {
           pushWithoutNavBar(
