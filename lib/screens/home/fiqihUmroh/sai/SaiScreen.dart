@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/sai/tabBar/penjelasanSai.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/sai/tabBar/tataCaraSai.dart';
 
 import '../../../../constants/colors.dart';
 import '../../../../widgets/textWidgets.dart';
@@ -45,7 +46,7 @@ class SaiScreen extends StatelessWidget {
         body: TabBarView(
           children: [
             PenjelasanSai(),
-            Center(),
+            TataCaraSai(),
           ],
         ),
       ),
