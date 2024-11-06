@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:ibadahku_mobile/widgets/buttonChangeSizeTextWidget.dart';
 
 import '../../constants/colors.dart';
+import '../../widgets/customAppBar.dart';
 import '../../widgets/textWidgets.dart';
 
 class List5 extends StatefulWidget {
@@ -36,30 +37,7 @@ class _List5State extends State<List5> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: false,
-        title: TextWidget(
-          text: "Kesehatan",
-          color: whiteColor,
-          textSize: 20,
-          isTitle: true,
-        ),
-        backgroundColor: primaryColor,
-        /* actions: [
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.search,
-                color: whiteColor,
-              )),
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.menu,
-                color: whiteColor,
-              )),
-        ], */
-      ),
+      appBar: CustomAppbar(title: "Kesehatan", height: 56),
       floatingActionButton:
           ButtonChangeSizeTextWidget(UppSize: upSize, DownSize: downSize),
       body: ListView(

@@ -14,6 +14,8 @@ import 'package:intl/intl.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../widgets/customAppBar.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -203,30 +205,7 @@ class _HomeScreenState extends State<HomeScreen> {
       },
     ];
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: false,
-        title: TextWidget(
-          text: "Ibadahku",
-          color: whiteColor,
-          textSize: 20,
-          isTitle: true,
-        ),
-        backgroundColor: primaryColor,
-        /* actions: [
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.search,
-                color: whiteColor,
-              )),
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.menu,
-                color: whiteColor,
-              )),
-        ], */
-      ),
+      appBar: CustomAppbar(title: "Ibadahku", height: 56),
       body: SingleChildScrollView(
         child: Column(
           children: [
