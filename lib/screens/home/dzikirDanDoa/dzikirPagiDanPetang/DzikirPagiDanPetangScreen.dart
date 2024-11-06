@@ -6,6 +6,7 @@ import 'package:ibadahku_mobile/screens/home/dzikirDanDoa/dzikirPagiDanPetang/Pe
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/thowaf/tabBar/penjelasanThowaf.dart';
 
 import '../../../../constants/colors.dart';
+import '../../../../widgets/customAppBar.dart';
 import '../../../../widgets/textWidgets.dart';
 
 class DzikirPagiDanPetangScreen extends StatelessWidget {
@@ -16,57 +17,17 @@ class DzikirPagiDanPetangScreen extends StatelessWidget {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        appBar: AppBar(
-          centerTitle: false,
-          bottom: TabBar(
+        appBar: CustomAppbar(
+          title: "Dzikir Pagi & Petang",
+          height: 100,
+          bottom: const TabBar(
+            labelColor: Colors.white,
             tabs: [
-              Tab(
-                child: TextWidget(
-                  text: "Penjelasan",
-                  color: whiteColor,
-                  textSize: 16,
-                  isTitle: true,
-                ),
-              ),
-              Tab(
-                child: TextWidget(
-                  text: "Dzikir Pagi",
-                  color: whiteColor,
-                  textSize: 16,
-                  isTitle: true,
-                ),
-              ),
-              Tab(
-                child: TextWidget(
-                  text: "Dzikir Petang",
-                  color: whiteColor,
-                  textSize: 16,
-                  isTitle: true,
-                ),
-              ),
+              Tab(text: "Penjelasan"),
+              Tab(text: "Dzikir Pagi"),
+              Tab(text: "Dzikir Petang"),
             ],
           ),
-          title: TextWidget(
-            text: "Dzikir Pagi & Petang",
-            color: whiteColor,
-            textSize: 20,
-            isTitle: true,
-          ),
-          backgroundColor: primaryColor,
-          /* actions: [
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.search,
-                  color: whiteColor,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.menu,
-                  color: whiteColor,
-                )),
-          ], */
         ),
         body: const TabBarView(
           children: [
