@@ -21,6 +21,8 @@ import 'package:ibadahku_mobile/screens/home/lokasiZiarah/mekkah/MuzdalifahScree
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
+import '../../../../widgets/customAppBar.dart';
+
 class LokasiZiarahMadinahScreeen extends StatelessWidget {
   const LokasiZiarahMadinahScreeen({super.key});
 
@@ -165,30 +167,7 @@ class LokasiZiarahMadinahScreeen extends StatelessWidget {
     ];
     return Scaffold(
         backgroundColor: whiteColor,
-        appBar: AppBar(
-          centerTitle: false,
-          title: TextWidget(
-            text: "Lokasi Ziarah Madinah",
-            color: whiteColor,
-            textSize: 20,
-            isTitle: true,
-          ),
-          backgroundColor: primaryColor,
-          /* actions: [
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.search,
-                  color: whiteColor,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.menu,
-                  color: whiteColor,
-                )),
-          ], */
-        ),
+        appBar: CustomAppbar(title: "Madinah", height: 56),
         body: ListView.builder(
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),

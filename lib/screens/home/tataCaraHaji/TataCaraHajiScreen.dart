@@ -3,6 +3,8 @@ import 'package:ibadahku_mobile/constants/colors.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
+import '../../../widgets/customAppBar.dart';
+
 class TataCaraHajiScreen extends StatefulWidget {
   const TataCaraHajiScreen({super.key});
 
@@ -60,30 +62,7 @@ class _TataCaraHajiScreenState extends State<TataCaraHajiScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: false,
-        title: TextWidget(
-          text: "Tata Cara Umroh",
-          color: whiteColor,
-          textSize: 20,
-          isTitle: true,
-        ),
-        backgroundColor: primaryColor,
-        /* actions: [
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.search,
-                color: whiteColor,
-              )),
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.menu,
-                color: whiteColor,
-              )),
-        ], */
-      ),
+      appBar: CustomAppbar(title: "Tata Cara Umroh", height: 56),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
         child: YoutubePlayerBuilder(

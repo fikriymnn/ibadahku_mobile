@@ -6,6 +6,8 @@ import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/masjidNabawi/K
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/masjidNabawi/SejarahMasjidNabawiScreen.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 
+import '../../../../../widgets/customAppBar.dart';
+
 class MesjidNabawi extends StatelessWidget {
   const MesjidNabawi({super.key});
 
@@ -14,49 +16,13 @@ class MesjidNabawi extends StatelessWidget {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        appBar: AppBar(
-          centerTitle: false,
-          bottom: TabBar(
-            tabs: [
-              Tab(
-                child: TextWidget(
-                  text: "Sejarah",
-                  color: whiteColor,
-                  textSize: 17,
-                  isTitle: true,
-                ),
-              ),
-              Tab(
-                child: TextWidget(
-                  text: "Keutamaan",
-                  color: whiteColor,
-                  textSize: 17,
-                  isTitle: true,
-                ),
-              ),
-            ],
-          ),
-          title: TextWidget(
-            text: "Mesjid Nabawi",
-            color: whiteColor,
-            textSize: 20,
-            isTitle: true,
-          ),
-          backgroundColor: primaryColor,
-          /* actions: [
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.search,
-                  color: whiteColor,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.menu,
-                  color: whiteColor,
-                )),
-          ], */
+        appBar: CustomAppbar(
+          title: "Mesjid Nabawi",
+          height: 100,
+          bottom: TabBar(labelColor: Colors.white, tabs: [
+            Tab(text: "Sejarah"),
+            Tab(text: "Keutamaan"),
+          ]),
         ),
         body: const TabBarView(
           children: [

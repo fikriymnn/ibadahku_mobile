@@ -15,6 +15,8 @@ import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/mesjidQuba/Keu
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/mesjidQuba/PenjelasanMesjidQubaScreen.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 
+import '../../../../../widgets/customAppBar.dart';
+
 class MesjidQubaScreen extends StatelessWidget {
   const MesjidQubaScreen({super.key});
 
@@ -23,57 +25,17 @@ class MesjidQubaScreen extends StatelessWidget {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        appBar: AppBar(
-          centerTitle: false,
+        appBar: CustomAppbar(
+          title: "Mesjid Quba",
+          height: 100,
           bottom: TabBar(
+            labelColor: whiteColor,
             tabs: [
-              Tab(
-                child: TextWidget(
-                  text: "Penjelasan",
-                  color: whiteColor,
-                  textSize: 17,
-                  isTitle: true,
-                ),
-              ),
-              Tab(
-                child: TextWidget(
-                  text: "Keutamaan",
-                  color: whiteColor,
-                  textSize: 17,
-                  isTitle: true,
-                ),
-              ),
-              Tab(
-                child: TextWidget(
-                  text: "Hukum",
-                  color: whiteColor,
-                  textSize: 17,
-                  isTitle: true,
-                ),
-              ),
+              Tab(text: "Penjelasan"),
+              Tab(text: "Keutamaan"),
+              Tab(text: "Hukum"),
             ],
           ),
-          title: TextWidget(
-            text: "Mesjid Quba",
-            color: whiteColor,
-            textSize: 20,
-            isTitle: true,
-          ),
-          backgroundColor: primaryColor,
-          /* actions: [
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.search,
-                  color: whiteColor,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.menu,
-                  color: whiteColor,
-                )),
-          ], */
         ),
         body: const TabBarView(
           children: [

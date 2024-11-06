@@ -6,13 +6,21 @@ import 'textWidgets.dart';
 class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final double height;
-  const CustomAppbar({super.key, required this.title, required this.height});
+  final TabBar? bottom;
+  final List<Widget>? actions;
+  const CustomAppbar(
+      {super.key,
+      required this.title,
+      required this.height,
+      this.bottom,
+      this.actions});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       centerTitle: false,
       foregroundColor: Colors.white,
+      bottom: bottom,
       title: TextWidget(
         text: title,
         color: whiteColor,
@@ -20,20 +28,7 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
         isTitle: true,
       ),
       backgroundColor: primaryColor,
-      /* actions: [
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.search,
-                color: whiteColor,
-              )),
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.menu,
-                color: whiteColor,
-              )),
-        ], */
+      actions: actions,
     );
   }
 

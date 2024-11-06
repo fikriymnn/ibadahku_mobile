@@ -15,6 +15,8 @@ import 'package:ibadahku_mobile/screens/home/persiapanHaji/keutamaanHaji/Keutama
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
+import '../../../widgets/customAppBar.dart';
+
 class PersiapanHajiScreen extends StatelessWidget {
   const PersiapanHajiScreen({super.key});
 
@@ -179,30 +181,7 @@ class PersiapanHajiScreen extends StatelessWidget {
       // },
     ];
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: false,
-        title: TextWidget(
-          text: "Persiapan Haji",
-          color: whiteColor,
-          textSize: 20,
-          isTitle: true,
-        ),
-        backgroundColor: primaryColor,
-        /* actions: [
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.search,
-                color: whiteColor,
-              )),
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.menu,
-                color: whiteColor,
-              )),
-        ], */
-      ),
+      appBar: CustomAppbar(title: "Persiapan Haji", height: 56),
       body: Padding(
         padding: const EdgeInsets.all(5.0),
         child: GridView.builder(

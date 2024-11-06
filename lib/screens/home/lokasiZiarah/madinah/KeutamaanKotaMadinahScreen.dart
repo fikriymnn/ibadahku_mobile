@@ -6,6 +6,8 @@ import 'package:ibadahku_mobile/constants/colors.dart';
 import 'package:ibadahku_mobile/widgets/buttonChangeSizeTextWidget.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 
+import '../../../../widgets/customAppBar.dart';
+
 class KeutamaanKotaMadinahScreen extends StatefulWidget {
   const KeutamaanKotaMadinahScreen({super.key});
 
@@ -43,30 +45,7 @@ class _KeutamaanKotaMadinahScreenState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          centerTitle: false,
-          title: TextWidget(
-            text: "Keutamaan Kota Madinah",
-            color: whiteColor,
-            textSize: 20,
-            isTitle: true,
-          ),
-          backgroundColor: primaryColor,
-          /* actions: [
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.search,
-                  color: whiteColor,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.menu,
-                  color: whiteColor,
-                )),
-          ], */
-        ),
+        appBar: CustomAppbar(title: "Keutamaan Madinah", height: 56),
         body: Padding(
             padding: const EdgeInsets.all(15.0),
             child: SingleChildScrollView(

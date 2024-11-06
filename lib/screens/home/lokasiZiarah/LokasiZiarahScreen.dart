@@ -5,36 +5,15 @@ import 'package:ibadahku_mobile/screens/home/lokasiZiarah/mekkah/LokasiZiarahMek
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
+import '../../../widgets/customAppBar.dart';
+
 class LokasiZiarahScreen extends StatelessWidget {
   const LokasiZiarahScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: false,
-        title: TextWidget(
-          text: "Lokasi Ziarah",
-          color: whiteColor,
-          textSize: 20,
-          isTitle: true,
-        ),
-        backgroundColor: primaryColor,
-        /* actions: [
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.search,
-                color: whiteColor,
-              )),
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.menu,
-                color: whiteColor,
-              )),
-        ], */
-      ),
+      appBar: CustomAppbar(title: "Lokasi Ziarah", height: 56),
       body: Padding(
         padding: const EdgeInsets.all(15.0),
         child: Column(

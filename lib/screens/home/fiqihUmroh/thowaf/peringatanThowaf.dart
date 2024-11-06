@@ -4,6 +4,7 @@ import 'package:ibadahku_mobile/functions/upDownSize.dart';
 import 'package:ibadahku_mobile/widgets/buttonChangeSizeTextWidget.dart';
 
 import '../../../../constants/colors.dart';
+import '../../../../widgets/customAppBar.dart';
 import '../../../../widgets/textWidgets.dart';
 
 class PeringatanThowaf extends StatelessWidget {
@@ -13,29 +14,9 @@ class PeringatanThowaf extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: false,
-        title: TextWidget(
-          text: "Peringatan Thowaf",
-          color: whiteColor,
-          textSize: 20,
-          isTitle: true,
-        ),
-        backgroundColor: primaryColor,
-        /* actions: [
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.search,
-                color: whiteColor,
-              )),
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.menu,
-                color: whiteColor,
-              )),
-        ], */
+      appBar: CustomAppbar(
+        title: "Peringatan Thowaf",
+        height: 56,
       ),
       floatingActionButton: ButtonChangeSizeTextWidget(
         UppSize: () {
