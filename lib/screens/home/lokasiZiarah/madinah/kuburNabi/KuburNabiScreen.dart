@@ -6,6 +6,7 @@ import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/kuburNabi/DoaK
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/kuburNabi/KesalahanKuburNabiScreen.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/masjidNabawi/KeutamaanMesjidNabawiScreen.dart';
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/masjidNabawi/SejarahMasjidNabawiScreen.dart';
+import 'package:ibadahku_mobile/widgets/customAppBar.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 
 class KuburNabiScreen extends StatelessWidget {
@@ -16,49 +17,16 @@ class KuburNabiScreen extends StatelessWidget {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        appBar: AppBar(
-          centerTitle: false,
+        appBar: CustomAppbar(
+          title: "Kubur Nabi",
+          height: 100,
           bottom: TabBar(
+            labelColor: Colors.white,
             tabs: [
-              Tab(
-                child: TextWidget(
-                  text: "Doa",
-                  color: whiteColor,
-                  textSize: 17,
-                  isTitle: true,
-                ),
-              ),
-              Tab(
-                child: TextWidget(
-                  text: "Kesalahan",
-                  color: whiteColor,
-                  textSize: 17,
-                  isTitle: true,
-                ),
-              ),
+              Tab(text: "Doa"),
+              Tab(text: "Kesalahan"),
             ],
           ),
-          title: TextWidget(
-            text: "Kubur Nabi",
-            color: whiteColor,
-            textSize: 20,
-            isTitle: true,
-          ),
-          backgroundColor: primaryColor,
-          /* actions: [
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.search,
-                  color: whiteColor,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.menu,
-                  color: whiteColor,
-                )),
-          ], */
         ),
         body: const TabBarView(
           children: [DoaKuburNabiScreen(), KesalahanKuburNabiScreen()],

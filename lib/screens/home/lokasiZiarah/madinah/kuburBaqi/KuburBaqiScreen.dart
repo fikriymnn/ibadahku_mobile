@@ -10,6 +10,8 @@ import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/masjidNabawi/K
 import 'package:ibadahku_mobile/screens/home/lokasiZiarah/madinah/masjidNabawi/SejarahMasjidNabawiScreen.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 
+import '../../../../../widgets/customAppBar.dart';
+
 class KuburBaqiScreen extends StatelessWidget {
   const KuburBaqiScreen({super.key});
 
@@ -18,49 +20,16 @@ class KuburBaqiScreen extends StatelessWidget {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        appBar: AppBar(
-          centerTitle: false,
+        appBar: CustomAppbar(
+          title: "Kubur Baqi",
+          height: 100,
           bottom: TabBar(
+            labelColor: whiteColor,
             tabs: [
-              Tab(
-                child: TextWidget(
-                  text: "Penjelasan",
-                  color: whiteColor,
-                  textSize: 17,
-                  isTitle: true,
-                ),
-              ),
-              Tab(
-                child: TextWidget(
-                  text: "Doa",
-                  color: whiteColor,
-                  textSize: 17,
-                  isTitle: true,
-                ),
-              ),
+              Tab(text: "Penjelasan"),
+              Tab(text: "Doa"),
             ],
           ),
-          title: TextWidget(
-            text: "Kubur Baq'i",
-            color: whiteColor,
-            textSize: 20,
-            isTitle: true,
-          ),
-          backgroundColor: primaryColor,
-          /* actions: [
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.search,
-                  color: whiteColor,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.menu,
-                  color: whiteColor,
-                )),
-          ], */
         ),
         body: const TabBarView(
           children: [PenjelasanKuburBaqiScreen(), DoaKuburBaqiScreen()],

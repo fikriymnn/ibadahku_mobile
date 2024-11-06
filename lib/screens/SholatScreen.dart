@@ -5,6 +5,8 @@ import 'package:ibadahku_mobile/services/sholatServices.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 import 'package:intl/intl.dart';
 
+import '../widgets/customAppBar.dart';
+
 class SholatScreen extends StatefulWidget {
   const SholatScreen({super.key});
 
@@ -67,30 +69,7 @@ class _SholatScreenState extends State<SholatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: false,
-        title: TextWidget(
-          text: "Jadwal Sholat",
-          color: whiteColor,
-          textSize: 20,
-          isTitle: true,
-        ),
-        backgroundColor: primaryColor,
-        /* actions: [
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.search,
-                color: whiteColor,
-              )),
-          IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.menu,
-                color: whiteColor,
-              )),
-        ], */
-      ),
+      appBar: CustomAppbar(title: "Jadwal Sholat", height: 56),
       body: SingleChildScrollView(
         child: Column(
           children: [

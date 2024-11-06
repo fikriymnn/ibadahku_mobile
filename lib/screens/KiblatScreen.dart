@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_qiblah/flutter_qiblah.dart';
+import 'package:ibadahku_mobile/widgets/customAppBar.dart';
 
 import '../constants/colors.dart';
 import '../widgets/qiblah_compass.dart';
@@ -18,30 +19,7 @@ class _KiblatScreenState extends State<KiblatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: false,
-        title: TextWidget(
-          text: "Arah Kiblat",
-          color: whiteColor,
-          textSize: 20,
-          isTitle: true,
-        ),
-        backgroundColor: primaryColor,
-        /* actions: [
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.search,
-                color: whiteColor,
-              )),
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.menu,
-                color: whiteColor,
-              )),
-        ], */
-      ),
+      appBar: CustomAppbar(title: "Arah Kiblat", height: 56),
       body: FutureBuilder(
         future: _deviceSupport,
         builder: (_, AsyncSnapshot<bool?> snapshot) {

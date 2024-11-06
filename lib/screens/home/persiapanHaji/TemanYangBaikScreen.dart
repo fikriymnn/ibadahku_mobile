@@ -6,6 +6,8 @@ import 'package:ibadahku_mobile/constants/colors.dart';
 import 'package:ibadahku_mobile/widgets/buttonChangeSizeTextWidget.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 
+import '../../../widgets/customAppBar.dart';
+
 class TemanYangBaikScreen extends StatefulWidget {
   const TemanYangBaikScreen({super.key});
 
@@ -40,30 +42,7 @@ class _TemanYangBaikScreenState extends State<TemanYangBaikScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          centerTitle: false,
-          title: TextWidget(
-            text: "Teman Yang Baik",
-            color: whiteColor,
-            textSize: 20,
-            isTitle: true,
-          ),
-          backgroundColor: primaryColor,
-          /* actions: [
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.search,
-                  color: whiteColor,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.menu,
-                  color: whiteColor,
-                )),
-          ], */
-        ),
+        appBar: CustomAppbar(title: "Teman Yang Baik", height: 56),
         body: Padding(
             padding: const EdgeInsets.all(15.0),
             child: SingleChildScrollView(

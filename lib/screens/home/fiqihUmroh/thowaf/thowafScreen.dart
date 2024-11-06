@@ -4,6 +4,7 @@ import 'package:ibadahku_mobile/screens/home/fiqihUmroh/thowaf/tabBar/caraThowaf
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/thowaf/tabBar/penjelasanThowaf.dart';
 
 import '../../../../constants/colors.dart';
+import '../../../../widgets/customAppBar.dart';
 import '../../../../widgets/textWidgets.dart';
 
 class ThowafScreen extends StatelessWidget {
@@ -14,35 +15,16 @@ class ThowafScreen extends StatelessWidget {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        appBar: AppBar(
-          centerTitle: false,
+        appBar: CustomAppbar(
+          title: "Thowaf",
+          height: 100,
           bottom: const TabBar(
+            labelColor: Colors.white,
             tabs: [
               Tab(text: "Penjelasan"),
               Tab(text: "Cara & Do'a"),
             ],
           ),
-          title: TextWidget(
-            text: "Thowaf",
-            color: whiteColor,
-            textSize: 20,
-            isTitle: true,
-          ),
-          backgroundColor: primaryColor,
-          /* actions: [
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.search,
-                  color: whiteColor,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.menu,
-                  color: whiteColor,
-                )),
-          ], */
         ),
         body: TabBarView(
           children: [

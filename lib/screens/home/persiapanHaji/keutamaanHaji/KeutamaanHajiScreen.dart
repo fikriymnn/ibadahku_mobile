@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ibadahku_mobile/constants/colors.dart';
 import 'package:ibadahku_mobile/widgets/buttonChangeSizeTextWidget.dart';
+import 'package:ibadahku_mobile/widgets/customAppBar.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 
 class KeutamaanHajiScreen extends StatefulWidget {
@@ -40,30 +41,7 @@ class _KeutamaanHajiScreenState extends State<KeutamaanHajiScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          centerTitle: false,
-          title: TextWidget(
-            text: "Keutamaan Haji",
-            color: whiteColor,
-            textSize: 20,
-            isTitle: true,
-          ),
-          backgroundColor: primaryColor,
-          /* actions: [
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.search,
-                  color: whiteColor,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.menu,
-                  color: whiteColor,
-                )),
-          ], */
-        ),
+        appBar: CustomAppbar(title: "Keutamaan Haji", height: 56),
         body: Padding(
             padding: const EdgeInsets.all(15.0),
             child: SingleChildScrollView(
