@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/ihramMiqot/ihramMiqotScreen.dart';
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/maqomIbrahim/maqomIbrahimScreen.dart';
+import 'package:ibadahku_mobile/screens/home/fiqihUmroh/minumZamzam/MinumZamZamScreen.dart';
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/sai/SaiScreen.dart';
 import 'package:ibadahku_mobile/screens/home/fiqihUmroh/thowaf/thowafScreen.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
@@ -62,12 +63,19 @@ class FiqihUmrohScreen extends StatelessWidget {
           );
         },
       },
-      /* {
-        'image': 'assets/zamzam_icon.png',
-        'text': 'Minum Zamzam',
-        'click': () {},
-      },
       {
+        'image': 'assets/zamzam_icon.png',
+        'text': 'Minum Air Zamzam',
+        'click': () {
+          pushWithoutNavBar(
+            context,
+            MaterialPageRoute(
+              builder: (context) => MinumZamzam(),
+            ),
+          );
+        },
+      },
+      /* {
         'image': 'assets/tahalul-icon.png',
         'text': 'Cukur Rambut',
         'click': () {},
@@ -123,7 +131,7 @@ class FiqihUmrohScreen extends StatelessWidget {
                   SizedBox(height: 10),
                   Text(
                     items[index]['text']!,
-                    style: TextStyle(fontSize: 16),
+                    style: TextStyle(fontSize: 12),
                   ),
                 ],
               ),
