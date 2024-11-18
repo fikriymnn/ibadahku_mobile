@@ -18,17 +18,22 @@ class _List2State extends State<List2> {
   double sizeTitle = 18;
   double sizeText = 16;
 
+  final double maxTitle = 28;
+  final double minTitle = 14;
+  final double maxText = 26;
+  final double minText = 12;
+
   void upSize() {
     setState(() {
-      sizeTitle++;
-      sizeText++;
+      if (sizeTitle < maxText) sizeTitle++;
+      if (sizeText < maxText) sizeText++;
     });
   }
 
   void downSize() {
     setState(() {
-      sizeTitle--;
-      sizeText--;
+      if (sizeTitle > minTitle) sizeTitle--;
+      if (sizeText > minText) sizeText--;
     });
   }
 
@@ -47,7 +52,6 @@ class _List2State extends State<List2> {
           ),
           const SizedBox(height: 16.0),
           BulletedList(
-            listOrder: ListOrder.ordered,
             style: TextStyle(
               fontSize: sizeText,
               color: blackColor,

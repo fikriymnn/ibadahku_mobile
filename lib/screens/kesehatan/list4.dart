@@ -18,19 +18,26 @@ class _List4State extends State<List4> {
   double sizeNum = 16;
   double sizeText = 14;
 
+  final double maxTitle = 28;
+  final double minTitle = 14;
+  final double maxNum = 26;
+  final double minNum = 12;
+  final double maxText = 24;
+  final double minText = 10;
+
   void upSize() {
     setState(() {
-      sizeTitle++;
-      sizeNum++;
-      sizeText++;
+      if (sizeTitle < maxTitle) sizeTitle++;
+      if (sizeNum < maxNum) sizeNum++;
+      if (sizeText < maxText) sizeText++;
     });
   }
 
   void downSize() {
     setState(() {
-      sizeTitle--;
-      sizeNum--;
-      sizeText--;
+      if (sizeTitle > minTitle) sizeTitle--;
+      if (sizeNum > minNum) sizeNum--;
+      if (sizeText > minText) sizeText--;
     });
   }
 

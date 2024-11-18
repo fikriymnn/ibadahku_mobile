@@ -64,7 +64,7 @@ class FiqihUmrohScreen extends StatelessWidget {
           );
         },
       },
-      {
+      /* {
         'image': 'assets/zamzam_icon.png',
         'text': 'Minum Air Zamzam',
         'click': () {
@@ -75,7 +75,7 @@ class FiqihUmrohScreen extends StatelessWidget {
             ),
           );
         },
-      },
+      }, */
       /* {
         'image': 'assets/tahalul-icon.png',
         'text': 'Cukur Rambut',

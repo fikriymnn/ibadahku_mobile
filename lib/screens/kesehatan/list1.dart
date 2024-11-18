@@ -15,20 +15,27 @@ class _List1State extends State<List1> {
   double sizeNumList = 16;
   double sizeText = 14;
 
+  final double maxTitle = 28;
+  final double minTitle = 14;
+  final double maxNumList = 26;
+  final double minNumList = 12;
+  final double maxText = 24;
+  final double minText = 10;
+
   void upSize() {
     print("object");
     setState(() {
-      sizeTitle++;
-      sizeNumList++;
-      sizeText++;
+      if (sizeTitle < maxTitle) sizeTitle++;
+      if (sizeNumList < maxNumList) sizeNumList++;
+      if (sizeText < maxText) sizeText++;
     });
   }
 
   void downSize() {
     setState(() {
-      sizeTitle--;
-      sizeNumList--;
-      sizeText--;
+      if (sizeTitle > minTitle) sizeTitle--;
+      if (sizeNumList > minNumList) sizeNumList--;
+      if (sizeText > minText) sizeText--;
     });
   }
 

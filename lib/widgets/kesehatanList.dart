@@ -165,7 +165,7 @@ class KesehatanList extends StatelessWidget {
                 );
               },
             ),
-            ListTile(
+            /* ListTile(
               leading: FaIcon(
                 FontAwesomeIcons.droplet,
                 color: Colors.red,
@@ -195,7 +195,7 @@ class KesehatanList extends StatelessWidget {
               onTap: () {
                 print('tapped');
               },
-            ),
+            ), */
           ],
         ),
       ),
