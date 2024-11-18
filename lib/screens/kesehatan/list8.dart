@@ -18,19 +18,26 @@ class _List8State extends State<List8> {
   double sizeSub = 16;
   double sizeText = 14;
 
+  final double maxTitle = 28;
+  final double minTitle = 14;
+  final double maxNum = 26;
+  final double minNum = 12;
+  final double maxText = 24;
+  final double minText = 10;
+
   void upSize() {
     setState(() {
-      sizeTitle++;
-      sizeSub++;
-      sizeText++;
+      if (sizeTitle < maxTitle) sizeTitle++;
+      if (sizeSub < maxNum) sizeSub++;
+      if (sizeText < maxText) sizeText++;
     });
   }
 
   void downSize() {
     setState(() {
-      sizeTitle--;
-      sizeSub--;
-      sizeText--;
+      if (sizeTitle > minTitle) sizeTitle--;
+      if (sizeSub > minNum) sizeSub--;
+      if (sizeText > minText) sizeText--;
     });
   }
 

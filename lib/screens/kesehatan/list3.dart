@@ -18,19 +18,26 @@ class _List3State extends State<List3> {
   double sizeNum = 16;
   double sizeText = 14;
 
+  final double maxTitle = 28;
+  final double minTitle = 14;
+  final double maxNum = 26;
+  final double minNum = 12;
+  final double maxText = 24;
+  final double minText = 10;
+
   void upSize() {
     setState(() {
-      sizeTitle++;
-      sizeNum++;
-      sizeText++;
+      if (sizeTitle < maxTitle) sizeTitle++;
+      if (sizeNum < maxNum) sizeNum++;
+      if (sizeText < maxText) sizeText++;
     });
   }
 
   void downSize() {
     setState(() {
-      sizeTitle--;
-      sizeNum--;
-      sizeText--;
+      if (sizeTitle > minTitle) sizeTitle--;
+      if (sizeNum > minNum) sizeNum--;
+      if (sizeText > minText) sizeText--;
     });
   }
 
@@ -44,7 +51,7 @@ class _List3State extends State<List3> {
         padding: const EdgeInsets.all(16.0),
         children: [
           Text(
-            'Kondisi Klinis Yang Tidak Memenuhi Syarat Istithaah (Mampu) Kesehatan',
+            'Kondisi Klinis Yang Tidak Memenuhi Syarat Istithaah Kesehatan',
             style: TextStyle(fontSize: sizeTitle, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 25.0),

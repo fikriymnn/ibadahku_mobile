@@ -17,17 +17,22 @@ class _List7State extends State<List7> {
   double sizeTitle = 18;
   double sizeText = 14;
 
+  final double maxTitle = 28;
+  final double minTitle = 14;
+  final double maxText = 26;
+  final double minText = 12;
+
   void upSize() {
     setState(() {
-      sizeTitle++;
-      sizeText++;
+      if (sizeTitle < maxText) sizeTitle++;
+      if (sizeText < maxText) sizeText++;
     });
   }
 
   void downSize() {
     setState(() {
-      sizeTitle--;
-      sizeText--;
+      if (sizeTitle > minTitle) sizeTitle--;
+      if (sizeText > minText) sizeText--;
     });
   }
 

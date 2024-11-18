@@ -4,17 +4,27 @@ class upDownSize {
   double sizeNum = 16;
   double sizeArabic = 20;
 
+  final double maxTitle = 28;
+  final double maxText = 24;
+  final double maxNum = 26;
+  final double maxArabic = 30;
+
+  final double minTitle = 14;
+  final double minText = 10;
+  final double minNum = 12;
+  final double minArabic = 16;
+
   void upSize() {
-    sizeTitle++;
-    sizeText++;
-    sizeNum++;
-    sizeArabic++;
+    if (sizeTitle < maxTitle) sizeTitle++;
+    if (sizeText < maxText) sizeText++;
+    if (sizeNum < maxNum) sizeNum++;
+    if (sizeArabic < maxArabic) sizeArabic++;
   }
 
   void downSize() {
-    sizeTitle--;
-    sizeText--;
-    sizeArabic--;
-    sizeNum--;
+    if (sizeTitle > minTitle) sizeTitle--;
+    if (sizeText > minText) sizeText--;
+    if (sizeArabic > minArabic) sizeArabic--;
+    if (sizeNum > minNum) sizeNum--;
   }
 }

@@ -21,21 +21,31 @@ class _TemanYangBaikScreenState extends State<TemanYangBaikScreen> {
   double sizeAyat = 16;
   double sizeArti = 14;
 
+  final double maxHeading = 27;
+  final double maxTitle = 26;
+  final double maxAyat = 26;
+  final double maxArti = 24;
+
+  final double minHeading = 13;
+  final double minTitle = 12;
+  final double minAyat = 12;
+  final double minArti = 10;
+
   void _uppSize() {
     setState(() {
-      sizeTitle++;
-      sizeAyat++;
-      sizeArti++;
-      sizeHeading++;
+      if (sizeTitle < maxTitle) sizeTitle++;
+      if (sizeAyat < maxAyat) sizeAyat++;
+      if (sizeArti < maxArti) sizeArti++;
+      if (sizeHeading < maxHeading) sizeHeading++;
     });
   }
 
   void _downSize() {
     setState(() {
-      sizeTitle--;
-      sizeAyat--;
-      sizeArti--;
-      sizeHeading--;
+      if (sizeTitle > minTitle) sizeTitle--;
+      if (sizeAyat > minAyat) sizeAyat--;
+      if (sizeArti > minArti) sizeArti--;
+      if (sizeHeading > minHeading) sizeHeading--;
     });
   }
 
