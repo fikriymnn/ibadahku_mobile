@@ -4,6 +4,7 @@ import 'package:ibadahku_mobile/constants/colors.dart';
 import 'package:ibadahku_mobile/services/sholatServices.dart';
 import 'package:ibadahku_mobile/widgets/textWidgets.dart';
 import 'package:intl/intl.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 import '../widgets/customAppBar.dart';
 
@@ -18,7 +19,7 @@ class _SholatScreenState extends State<SholatScreen> {
   bool _loading = true;
   @override
   void initState() {
-    // TODO: implement initState
+    _checkPermission();
     super.initState();
   }
 
@@ -64,6 +65,41 @@ class _SholatScreenState extends State<SholatScreen> {
   bool _isTimeAfter(TimeOfDay now, TimeOfDay prayerTime) {
     return now.hour < prayerTime.hour ||
         (now.hour == prayerTime.hour && now.minute < prayerTime.minute);
+  }
+
+  Future<void> _checkPermission() async {
+    final status = await Permission.locationWhenInUse.status;
+    if (status.isDenied) {
+      await Permission.locationWhenInUse.request();
+    }
+  }
+
+  void _showLocationPermissionDialog() {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Text("Izin Lokasi Dibutuhkan"),
+          content: Text(
+              "Aplikasi ini membutuhkan akses lokasi untuk menentukan arah kiblat. Harap aktifkan izin lokasi."),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context); // Menutup dialog
+              },
+              child: Text("Tutup"),
+            ),
+            ElevatedButton(
+              onPressed: () async {
+                Navigator.pop(context); // Menutup dialog
+                await openAppSettings(); // Membuka pengaturan aplikasi
+              },
+              child: Text("Buka Pengaturan"),
+            ),
+          ],
+        );
+      },
+    );
   }
 
   @override
@@ -172,7 +208,22 @@ class _SholatScreenState extends State<SholatScreen> {
                       ),
                     );
                   } else if (snapshot.hasError) {
-                    return Text('Error: ${snapshot.error}');
+                    return Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Izin lokasi tidak diaktifkan",
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(height: 16),
+                        ElevatedButton(
+                          onPressed: _showLocationPermissionDialog,
+                          child: Text("Izinkan Lokasi"),
+                        ),
+                      ],
+                    );
                   } else if (snapshot.hasData) {
                     print(snapshot.data["data"]);
 
