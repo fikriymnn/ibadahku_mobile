@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_qiblah/flutter_qiblah.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 import 'location_error_widget.dart';
 
@@ -19,10 +20,46 @@ class _QiblahCompassState extends State<QiblahCompass> {
 
   Stream<LocationStatus> get stream => _locationStreamController.stream;
 
+  Future<void> _checkPermission() async {
+    final status = await Permission.locationWhenInUse.status;
+    if (status.isDenied) {
+      await Permission.locationWhenInUse.request();
+    }
+  }
+
+  void _showLocationPermissionDialog() {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Text("Izin Lokasi Dibutuhkan"),
+          content: Text(
+              "Aplikasi ini membutuhkan akses lokasi untuk menentukan arah kiblat. Harap aktifkan izin lokasi."),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context); // Menutup dialog
+              },
+              child: Text("Tutup"),
+            ),
+            ElevatedButton(
+              onPressed: () async {
+                Navigator.pop(context); // Menutup dialog
+                await openAppSettings(); // Membuka pengaturan aplikasi
+              },
+              child: Text("Buka Pengaturan"),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   @override
   void initState() {
     super.initState();
     _checkLocationStatus();
+    _checkPermission();
   }
 
   @override
@@ -51,9 +88,21 @@ class _QiblahCompassState extends State<QiblahCompass> {
                 return QiblahCompassWidget();
 
               case LocationPermission.denied:
-                return LocationErrorWidget(
-                  error: "Location service permission denied",
-                  callback: _checkLocationStatus,
+                return Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Izin lokasi tidak diaktifkan",
+                      style:
+                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(height: 16),
+                    ElevatedButton(
+                      onPressed: _showLocationPermissionDialog,
+                      child: Text("Izinkan Lokasi"),
+                    ),
+                  ],
                 );
               case LocationPermission.deniedForever:
                 return LocationErrorWidget(
