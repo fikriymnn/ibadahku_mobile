@@ -23,33 +23,35 @@ class KesehatanSelengkapnyaScreen extends StatelessWidget {
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 30.0),
-          child: ValueListenableBuilder(
-              valueListenable: upDownNotifier,
-              builder: (context, upDown, child) {
-                return Column(
-                  children: <Widget>[
-                    Text(
-                      "Ibadah umroh dan haji memerlukan kesiapan fisik dan mental yang optimal. Oleh karena itu, kesehatan para calon jemaah menjadi syarat wajib yang ditetapkan oleh pemerintah Indonesia sebelum diberikan izin untuk berangkat ke tanah suci.",
-                      style: TextStyle(
-                        fontSize: upDown.sizeTitle,
-                        color: blackColor,
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 30.0),
+            child: ValueListenableBuilder(
+                valueListenable: upDownNotifier,
+                builder: (context, upDown, child) {
+                  return Column(
+                    children: <Widget>[
+                      Text(
+                        "Ibadah umroh dan haji memerlukan kesiapan fisik dan mental yang optimal. Oleh karena itu, kesehatan para calon jemaah menjadi syarat wajib yang ditetapkan oleh pemerintah Indonesia sebelum diberikan izin untuk berangkat ke tanah suci.",
+                        style: TextStyle(
+                          fontSize: upDown.sizeTitle,
+                          color: blackColor,
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 50,
-                    ),
-                    Text(
-                      "Untuk mencapai kesempurnaan dalam beribadah, kesehatan yang baik sangat penting. Oleh karena itu, calon jemaah harus memperhatikan, menjaga, dan meningkatkan kesehatan mereka jauh-jauh hari sebelum berangkat ke tanah suci, selama berada di sana, serta setelah kembali.",
-                      style: TextStyle(
-                        fontSize: upDown.sizeTitle,
-                        color: blackColor,
+                      SizedBox(
+                        height: 50,
                       ),
-                    ),
-                  ],
-                );
-              }),
+                      Text(
+                        "Untuk mencapai kesempurnaan dalam beribadah, kesehatan yang baik sangat penting. Oleh karena itu, calon jemaah harus memperhatikan, menjaga, dan meningkatkan kesehatan mereka jauh-jauh hari sebelum berangkat ke tanah suci, selama berada di sana, serta setelah kembali.",
+                        style: TextStyle(
+                          fontSize: upDown.sizeTitle,
+                          color: blackColor,
+                        ),
+                      ),
+                    ],
+                  );
+                }),
+          ),
         ),
       ),
     );
