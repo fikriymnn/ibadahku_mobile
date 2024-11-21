@@ -1,4 +1,4 @@
-package com.example.ibadahku_mobile
+package digital.ibadahku.mobile
 
 import io.flutter.embedding.android.FlutterActivity
 
